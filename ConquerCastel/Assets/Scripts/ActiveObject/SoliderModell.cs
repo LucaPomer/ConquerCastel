@@ -5,6 +5,8 @@ using UnityEngine;
 public class SoliderModell : ActiveObjectModell 
 
 {
+    public float movementSpeed = 0.2f;
+    
     // Start is called before the first frame update
     void Start()
     {
