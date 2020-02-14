@@ -29,5 +29,9 @@ public class PassiveObjectModell : MonoBehaviour
     public void ReductHealth(float hitPoints)
     {
         health -= hitPoints;
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

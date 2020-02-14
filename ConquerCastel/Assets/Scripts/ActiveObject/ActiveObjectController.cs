@@ -21,9 +21,51 @@ public class ActiveObjectController : MonoBehaviour
     {
         
     }
+    
+    public void Hit(float hitPoints)
+    {
+        activeObjectModell.ReductHealth(hitPoints);
+    }
 
     public void SetTarget(GameObject target)
     {
         activeObjectModell.SetTarget(target);
     }
+    
+    public virtual void Attack(GameObject toAttack)
+    {
+        StartCoroutine(GiveDamage(toAttack));
+    }
+    
+    
+    //is only called after establishing this object should be hit
+    IEnumerator GiveDamage(GameObject toAttack)
+    {
+        bool hasTarget = true;
+        while (hasTarget)
+        {
+            ActiveObjectController activeController = toAttack.GetComponent<ActiveObjectController>();
+            PassiveObjectController passiveController = toAttack.GetComponent<PassiveObjectController>();
+            if (activeController)
+            {
+                activeController.Hit(activeObjectModell.attackDamage);
+            }
+            else if(passiveController)
+            {
+               
+                passiveController.Hit(activeObjectModell.attackDamage);
+            }
+
+           yield return new WaitForSeconds(activeObjectModell.attackEveryXSecond);
+           if (activeObjectModell.GetTarget() == null)
+           {
+               hasTarget = false;
+            
+           }
+
+        }
+  
+      
+    }
+
 }

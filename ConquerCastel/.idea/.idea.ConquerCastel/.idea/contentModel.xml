@@ -8,8 +8,11 @@
           <e p="ActiveObject" t="Include">
             <e p="ActiveObjectController.cs" t="Include" />
             <e p="ActiveObjectModell.cs" t="Include" />
+            <e p="ActiveObjectView.cs" t="Include" />
+            <e p="AttackRadius.cs" t="Include" />
             <e p="SoliderController.cs" t="Include" />
             <e p="SoliderModell.cs" t="Include" />
+            <e p="SoliderView.cs" t="Include" />
             <e p="TriggerRadius.cs" t="Include" />
           </e>
           <e p="PassiveObjects" t="Include">

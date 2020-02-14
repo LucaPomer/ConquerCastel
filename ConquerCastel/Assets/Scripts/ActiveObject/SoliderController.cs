@@ -14,7 +14,11 @@ public class SoliderController : ActiveObjectController
     // Update is called once per frame
     void Update()
     {
-        Move();
+        if (soliderM.GetMovingStatus()==true)
+        {
+            Move();
+        }
+   
     }
 
     private void Move()
@@ -31,4 +35,31 @@ public class SoliderController : ActiveObjectController
                 new Vector3(0,0,0), Time.deltaTime * soliderM.movementSpeed);
         }
     }
+
+     public override void Attack(GameObject toAttack) 
+    {
+       
+      
+        if ( toAttack.CompareTag("enemy"))
+        {
+            
+            base.Attack(toAttack);
+            
+            soliderM.SetMovingStatus(false);
+            
+            if (soliderM.GetTarget() != null)
+            {
+                Debug.Log("SOLIDER CONTROLLER : attacking enemy");
+            }
+
+            else
+            {
+                soliderM.SetTarget(toAttack);
+                Debug.Log("SOLIDER CONTROLLER : attacking and adding enemy");
+            }
+            
+        }
+    }
+
+
 }

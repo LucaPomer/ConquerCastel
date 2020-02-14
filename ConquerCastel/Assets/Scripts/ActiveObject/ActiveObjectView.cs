@@ -2,12 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoliderModell : ActiveObjectModell 
-
+public class ActiveObjectView : MonoBehaviour
 {
-    public float movementSpeed = 0.2f;
-
-    private bool moving =true;
+    public ActiveObjectController activeC;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,13 +17,8 @@ public class SoliderModell : ActiveObjectModell
         
     }
 
-    public bool GetMovingStatus()
+    public void Attack(GameObject toAttack)
     {
-        return moving;
-    }
-
-    public void SetMovingStatus(bool status)
-    {
-        moving = status;
+        activeC.Attack(toAttack);
     }
 }

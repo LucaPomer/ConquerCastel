@@ -9,13 +9,13 @@ public class ActiveObjectModell : MonoBehaviour
 
     public float attackDamage;
 
-    public float attackSpeed;
+    public float attackEveryXSecond;
 
     public float attackRangeRadius;
 
     public int lvl;
 
-    private GameObject target;
+    public GameObject target;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +41,16 @@ public class ActiveObjectModell : MonoBehaviour
     {
         return target;
     }
+    
+    public void ReductHealth(float hitPoints)
+    {
+        health -= hitPoints;
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+   
     
     
 }
