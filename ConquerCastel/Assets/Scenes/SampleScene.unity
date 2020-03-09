@@ -557,6 +557,7 @@ GameObject:
   - component: {fileID: 1507320060}
   - component: {fileID: 1507320064}
   - component: {fileID: 1507320065}
+  - component: {fileID: 1507320066}
   m_Layer: 0
   m_Name: Wall
   m_TagString: enemy
@@ -667,6 +668,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1507320066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507320059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59e243a43bdb345f380c0857739c7cba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1941536577
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,6 +694,7 @@ GameObject:
   - component: {fileID: 1941536580}
   - component: {fileID: 1941536579}
   - component: {fileID: 1941536578}
+  - component: {fileID: 1941536584}
   m_Layer: 0
   m_Name: Wall (1)
   m_TagString: enemy
@@ -791,6 +805,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1941536584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941536577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59e243a43bdb345f380c0857739c7cba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6396924020794653817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -872,6 +898,11 @@ PrefabInstance:
         type: 3}
       propertyPath: attackSpeedPerSecond
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3280500684020354284, guid: 03d84d677baea420195ef36470697f88,
+        type: 3}
+      propertyPath: attackEveryXSecond
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 790538167, guid: 03d84d677baea420195ef36470697f88, type: 3}
       propertyPath: soliderM

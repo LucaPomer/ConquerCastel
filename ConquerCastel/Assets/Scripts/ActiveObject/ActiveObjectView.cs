@@ -19,6 +19,6 @@ public class ActiveObjectView : MonoBehaviour
 
     public void Attack(GameObject toAttack)
     {
-        activeC.Attack(toAttack);
+        activeC.Attack(toAttack,(() => {}));
     }
 }

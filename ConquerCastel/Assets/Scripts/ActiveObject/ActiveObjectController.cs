@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -32,14 +33,15 @@ public class ActiveObjectController : MonoBehaviour
         activeObjectModell.SetTarget(target);
     }
     
-    public virtual void Attack(GameObject toAttack)
+    public virtual void Attack(GameObject toAttack,Action onFinished)
     {
-        StartCoroutine(GiveDamage(toAttack));
+        StartCoroutine(GiveDamage(toAttack, onFinished).GetEnumerator());
+       
     }
     
     
     //is only called after establishing this object should be hit
-    IEnumerator GiveDamage(GameObject toAttack)
+    IEnumerable<WaitForSeconds> GiveDamage(GameObject toAttack, Action onFinished)
     {
         bool hasTarget = true;
         while (hasTarget)
@@ -64,8 +66,11 @@ public class ActiveObjectController : MonoBehaviour
            }
 
         }
-  
-      
+
+        activeObjectModell.ResetTargetToNull();
+        Debug.Log("ACTIVE OBJECT MODEL: reset target to null");
+        onFinished();
+
     }
 
 }

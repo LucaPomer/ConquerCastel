@@ -35,6 +35,12 @@ public class ActiveObjectModell : MonoBehaviour
             this.target = targetToSet;
             Debug.Log("set Target");
         }
+        
+    }
+
+    public void ResetTargetToNull()
+    {
+        target = null;
     }
 
     public GameObject GetTarget()

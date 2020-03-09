@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -23,7 +24,7 @@ public class SoliderController : ActiveObjectController
 
     private void Move()
     {
-        if (soliderM.GetTarget())
+        if (soliderM.GetTarget()!=null)
         {
             transform.position = Vector3.MoveTowards(transform.position,
                 soliderM.GetTarget().transform.position, Time.deltaTime * soliderM.movementSpeed);
@@ -36,20 +37,21 @@ public class SoliderController : ActiveObjectController
         }
     }
 
-     public override void Attack(GameObject toAttack) 
+     public override void Attack(GameObject toAttack, Action onFinished) 
     {
        
       
         if ( toAttack.CompareTag("enemy"))
         {
             
-            base.Attack(toAttack);
+            base.Attack(toAttack,(() => soliderM.SetMovingStatus(true)));
             
             soliderM.SetMovingStatus(false);
             
             if (soliderM.GetTarget() != null)
             {
                 Debug.Log("SOLIDER CONTROLLER : attacking enemy");
+                //Todo add animation to attack
             }
 
             else
@@ -59,6 +61,7 @@ public class SoliderController : ActiveObjectController
             }
             
         }
+        
     }
 
 
