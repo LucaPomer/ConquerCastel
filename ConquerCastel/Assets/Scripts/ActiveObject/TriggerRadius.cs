@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TriggerRadius : MonoBehaviour
 {
-    public ActiveObjectController objectOfTrigger;
+    public ActiveObjectController objectOfTriggerController;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,16 @@ public class TriggerRadius : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("entered trigger");
-            objectOfTrigger.SetTarget(other.gameObject);
+        Debug.Log("entered vision trigger");
+        //Todo remove redundent step
+            objectOfTriggerController.SetTarget(other.gameObject);
+            
+            objectOfTriggerController.AddTargetToList(other.gameObject);           
+            
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        objectOfTriggerController.RemoveTargetFromList(other.gameObject);
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ActiveObjectModell : MonoBehaviour
@@ -16,6 +17,8 @@ public class ActiveObjectModell : MonoBehaviour
     public int lvl;
 
     public GameObject target;
+
+    public List<GameObject> targetsInRange;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +58,24 @@ public class ActiveObjectModell : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void AddTargetToList(GameObject targetToAdd)
+    {
+        targetsInRange.Add(targetToAdd);
+    }
+
+    public GameObject GetNextTarget()
+    {
+        //Todo null target handeling - if the target dies from other reasons
+        GameObject nextTarget = targetsInRange.First();
+        targetsInRange.Remove(nextTarget);
+        return nextTarget;
+    }
+    
+    public void RemoveTargetFromList(GameObject targetToRemove)
+    {
+        targetsInRange.Remove(targetToRemove);
     }
    
     

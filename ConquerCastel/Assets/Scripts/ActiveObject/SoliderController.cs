@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
 public class SoliderController : ActiveObjectController
@@ -44,7 +45,7 @@ public class SoliderController : ActiveObjectController
         if ( toAttack.CompareTag("enemy"))
         {
             
-            base.Attack(toAttack,(() => soliderM.SetMovingStatus(true)));
+            base.Attack(toAttack,(() => afterTargetDied()));
             
             soliderM.SetMovingStatus(false);
             
@@ -63,6 +64,13 @@ public class SoliderController : ActiveObjectController
         }
         
     }
+
+     Action afterTargetDied()
+     {
+         soliderM.SetMovingStatus(true);
+         soliderM.SetTarget(GetNextTarget());
+         return null;
+     }
 
 
 }

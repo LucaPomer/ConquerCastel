@@ -44,10 +44,11 @@ public class ActiveObjectController : MonoBehaviour
     IEnumerable<WaitForSeconds> GiveDamage(GameObject toAttack, Action onFinished)
     {
         bool hasTarget = true;
+        ActiveObjectController activeController = toAttack.GetComponent<ActiveObjectController>();
+        PassiveObjectController passiveController = toAttack.GetComponent<PassiveObjectController>();
         while (hasTarget)
         {
-            ActiveObjectController activeController = toAttack.GetComponent<ActiveObjectController>();
-            PassiveObjectController passiveController = toAttack.GetComponent<PassiveObjectController>();
+          
             if (activeController)
             {
                 activeController.Hit(activeObjectModell.attackDamage);
@@ -58,19 +59,43 @@ public class ActiveObjectController : MonoBehaviour
                 passiveController.Hit(activeObjectModell.attackDamage);
             }
 
-           yield return new WaitForSeconds(activeObjectModell.attackEveryXSecond);
-           if (activeObjectModell.GetTarget() == null)
-           {
-               hasTarget = false;
+            if (activeObjectModell.GetTarget() == null)
+            {
+                hasTarget = false;
             
-           }
+            }
+           yield return new WaitForSeconds(activeObjectModell.attackEveryXSecond);
+         
 
         }
 
-        activeObjectModell.ResetTargetToNull();
-        Debug.Log("ACTIVE OBJECT MODEL: reset target to null");
+       // activeObjectModell.ResetTargetToNull();
+      //  Debug.Log("ACTIVE OBJECT MODEL: reset target to null");
         onFinished();
 
+    }
+
+    public void AddTargetToList(GameObject targetToAdd)
+    {
+        if (targetToAdd.CompareTag("enemy"))
+        {
+            activeObjectModell.AddTargetToList(targetToAdd);    
+        }
+        
+    }
+
+    public void RemoveTargetFromList(GameObject targetToRemove)
+    {
+        if (targetToRemove.CompareTag("enemy"))
+        {
+            activeObjectModell.RemoveTargetFromList(targetToRemove);         
+        }
+   
+    }
+
+    public GameObject GetNextTarget()
+    {
+       return activeObjectModell.GetNextTarget();
     }
 
 }

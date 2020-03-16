@@ -7,7 +7,7 @@ public class SoliderModell : ActiveObjectModell
 {
     public float movementSpeed = 0.2f;
 
-    private bool moving =true;
+    public bool moving =true;
     // Start is called before the first frame update
     void Start()
     {
