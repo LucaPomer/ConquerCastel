@@ -22,4 +22,9 @@ public class PassiveObjectController : MonoBehaviour
         Debug.Log("PASIVE OBJECT CONTROLLER : hit");
         passiveObjectModell.ReductHealth(hitPoints);
     }
+
+    public bool IsAlive()
+    {
+        return passiveObjectModell.IsAlive();
+    }
 }

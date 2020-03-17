@@ -55,8 +55,13 @@ public class ActiveObjectModell : MonoBehaviour
         health -= hitPoints;
         if (health <= 0)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
+    }
+    
+    public bool IsAlive()
+    {
+        return health > 0;
     }
 
 

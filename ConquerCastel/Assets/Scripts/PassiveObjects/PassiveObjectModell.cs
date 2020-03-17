@@ -24,14 +24,21 @@ public class PassiveObjectModell : MonoBehaviour
     void Update()
     {
         
+        
     }
 
+    //true for dead
     public void ReductHealth(float hitPoints)
     {
         health -= hitPoints;
         if (health <= 0)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
+    }
+
+    public bool IsAlive()
+    {
+        return health > 0;
     }
 }

@@ -25,7 +25,7 @@ public class ActiveObjectController : MonoBehaviour
     
     public void Hit(float hitPoints)
     {
-        activeObjectModell.ReductHealth(hitPoints);
+       activeObjectModell.ReductHealth(hitPoints);
     }
 
     public void SetTarget(GameObject target)
@@ -45,28 +45,38 @@ public class ActiveObjectController : MonoBehaviour
     IEnumerable<WaitForSeconds> GiveDamage(GameObject toAttack, Action onFinished)
     {
         bool hasTarget = true;
-        ActiveObjectController activeController = toAttack.GetComponent<ActiveObjectController>();
-        PassiveObjectController passiveController = toAttack.GetComponent<PassiveObjectController>();
+        bool targetDead = false;
+        ActiveObjectController activeControllerTarget = toAttack.GetComponent<ActiveObjectController>();
+        PassiveObjectController passiveControllerTarget = toAttack.GetComponent<PassiveObjectController>();
         while (hasTarget)
         {
           
-            if (activeController)
+            if (activeControllerTarget)
             {
-                activeController.Hit(activeObjectModell.attackDamage);
+               activeControllerTarget.Hit(activeObjectModell.attackDamage);
+               if (!activeControllerTarget.IsAlive())
+               {
+                   hasTarget = false;
+                   activeObjectModell.ResetTargetToNull();
+               }
+               else
+               {
+                   yield return new WaitForSeconds(activeObjectModell.attackEveryXSecond); 
+               }
             }
-            else if(passiveController)
+            else if(passiveControllerTarget)
             {
-               
-                passiveController.Hit(activeObjectModell.attackDamage);
+                passiveControllerTarget.Hit(activeObjectModell.attackDamage);
+                if (!passiveControllerTarget.IsAlive())
+                {
+                    hasTarget = false;
+                    activeObjectModell.ResetTargetToNull();
+                }
+                else
+                {
+                    yield return new WaitForSeconds(activeObjectModell.attackEveryXSecond);
+                }
             }
-
-            if (activeObjectModell.GetTarget() == null)
-            {
-                hasTarget = false;
-            
-            }
-           yield return new WaitForSeconds(activeObjectModell.attackEveryXSecond);
-         
 
         }
 
@@ -92,6 +102,12 @@ public class ActiveObjectController : MonoBehaviour
             }
             i++;
         }
+    }
+    
+    private bool IsAlive()
+    {
+        Debug.Log(" testing is alive " + activeObjectModell.IsAlive());
+        return activeObjectModell.IsAlive();
     }
 
 }
