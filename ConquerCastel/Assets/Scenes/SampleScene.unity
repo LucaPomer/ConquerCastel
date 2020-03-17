@@ -889,6 +889,11 @@ PrefabInstance:
       propertyPath: objectOfTrigger
       value: 
       objectReference: {fileID: 790538173}
+    - target: {fileID: 5135907823148821940, guid: 03d84d677baea420195ef36470697f88,
+        type: 3}
+      propertyPath: objectOfTriggerController
+      value: 
+      objectReference: {fileID: 790538173}
     - target: {fileID: 3280500684020354284, guid: 03d84d677baea420195ef36470697f88,
         type: 3}
       propertyPath: attackDamage
@@ -902,6 +907,11 @@ PrefabInstance:
     - target: {fileID: 3280500684020354284, guid: 03d84d677baea420195ef36470697f88,
         type: 3}
       propertyPath: attackEveryXSecond
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3280500684020354284, guid: 03d84d677baea420195ef36470697f88,
+        type: 3}
+      propertyPath: attackRangeRadius
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 790538167, guid: 03d84d677baea420195ef36470697f88, type: 3}

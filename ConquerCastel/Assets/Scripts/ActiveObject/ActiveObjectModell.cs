@@ -18,7 +18,6 @@ public class ActiveObjectModell : MonoBehaviour
 
     public GameObject target;
 
-    public List<GameObject> targetsInRange;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,23 +59,7 @@ public class ActiveObjectModell : MonoBehaviour
         }
     }
 
-    public void AddTargetToList(GameObject targetToAdd)
-    {
-        targetsInRange.Add(targetToAdd);
-    }
 
-    public GameObject GetNextTarget()
-    {
-        //Todo null target handeling - if the target dies from other reasons
-        GameObject nextTarget = targetsInRange.First();
-        targetsInRange.Remove(nextTarget);
-        return nextTarget;
-    }
-    
-    public void RemoveTargetFromList(GameObject targetToRemove)
-    {
-        targetsInRange.Remove(targetToRemove);
-    }
    
     
     

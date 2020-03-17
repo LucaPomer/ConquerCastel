@@ -14,7 +14,7 @@ public class ActiveObjectController : MonoBehaviour
 
     void Start()
     {
-       
+       SearchForTarget();
     }
 
     // Update is called once per frame
@@ -32,14 +32,15 @@ public class ActiveObjectController : MonoBehaviour
     {
         activeObjectModell.SetTarget(target);
     }
-    
-    public virtual void Attack(GameObject toAttack,Action onFinished)
+
+    public virtual void Attack(GameObject toAttack, Action onFinished)
     {
-        StartCoroutine(GiveDamage(toAttack, onFinished).GetEnumerator());
-       
+        if (activeObjectModell.GetTarget() == toAttack)
+        {
+            StartCoroutine(GiveDamage(toAttack, onFinished).GetEnumerator());
+        }
     }
-    
-    
+
     //is only called after establishing this object should be hit
     IEnumerable<WaitForSeconds> GiveDamage(GameObject toAttack, Action onFinished)
     {
@@ -72,30 +73,25 @@ public class ActiveObjectController : MonoBehaviour
        // activeObjectModell.ResetTargetToNull();
       //  Debug.Log("ACTIVE OBJECT MODEL: reset target to null");
         onFinished();
+        SearchForTarget();
 
     }
 
-    public void AddTargetToList(GameObject targetToAdd)
+    private void SearchForTarget()
     {
-        if (targetToAdd.CompareTag("enemy"))
+        Collider[] inAttackRangeColliders = Physics.OverlapSphere(gameObject.transform.position, activeObjectModell.attackRangeRadius);
+        int i = 0;
+        while (i < inAttackRangeColliders.Length)
         {
-            activeObjectModell.AddTargetToList(targetToAdd);    
+            GameObject inRange = inAttackRangeColliders[i].gameObject;
+            if (inRange.CompareTag("enemy"))
+            {
+                activeObjectModell.SetTarget(inRange);
+                Attack(inRange,()=>{});
+                break;
+            }
+            i++;
         }
-        
-    }
-
-    public void RemoveTargetFromList(GameObject targetToRemove)
-    {
-        if (targetToRemove.CompareTag("enemy"))
-        {
-            activeObjectModell.RemoveTargetFromList(targetToRemove);         
-        }
-   
-    }
-
-    public GameObject GetNextTarget()
-    {
-       return activeObjectModell.GetNextTarget();
     }
 
 }

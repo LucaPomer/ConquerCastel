@@ -45,7 +45,7 @@ public class SoliderController : ActiveObjectController
         if ( toAttack.CompareTag("enemy"))
         {
             
-            base.Attack(toAttack,(() => afterTargetDied()));
+            base.Attack(toAttack,(() => AfterTargetDied()));
             
             soliderM.SetMovingStatus(false);
             
@@ -65,10 +65,9 @@ public class SoliderController : ActiveObjectController
         
     }
 
-     Action afterTargetDied()
+     Action AfterTargetDied()
      {
          soliderM.SetMovingStatus(true);
-         soliderM.SetTarget(GetNextTarget());
          return null;
      }
 

@@ -26,12 +26,12 @@ public class TriggerRadius : MonoBehaviour
         //Todo remove redundent step
             objectOfTriggerController.SetTarget(other.gameObject);
             
-            objectOfTriggerController.AddTargetToList(other.gameObject);           
+   //         objectOfTriggerController.AddTargetToList(other.gameObject);           
             
     }
 
     private void OnTriggerExit(Collider other)
     {
-        objectOfTriggerController.RemoveTargetFromList(other.gameObject);
+     //   objectOfTriggerController.RemoveTargetFromList(other.gameObject);
     }
 }
