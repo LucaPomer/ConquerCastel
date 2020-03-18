@@ -135,6 +135,8 @@ GameObject:
   - component: {fileID: 456153240}
   - component: {fileID: 456153239}
   - component: {fileID: 456153238}
+  - component: {fileID: 456153246}
+  - component: {fileID: 456153245}
   m_Layer: 0
   m_Name: Wall (2)
   m_TagString: enemy
@@ -257,6 +259,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &456153245
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456153237}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: a76928caf416a42798af3f5374ec3a4d, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &456153246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456153237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 864628fc7c38941edacf7cc57f1f43c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onHit: {fileID: 456153245}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,6 +725,8 @@ GameObject:
   - component: {fileID: 1507320064}
   - component: {fileID: 1507320065}
   - component: {fileID: 1507320066}
+  - component: {fileID: 1507320068}
+  - component: {fileID: 1507320067}
   m_Layer: 0
   m_Name: Wall
   m_TagString: enemy
@@ -817,6 +849,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59e243a43bdb345f380c0857739c7cba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!111 &1507320067
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507320059}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: a76928caf416a42798af3f5374ec3a4d, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &1507320068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507320059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 864628fc7c38941edacf7cc57f1f43c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onHit: {fileID: 1507320067}
 --- !u!1 &1941536577
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,6 +892,8 @@ GameObject:
   - component: {fileID: 1941536579}
   - component: {fileID: 1941536578}
   - component: {fileID: 1941536584}
+  - component: {fileID: 1941536585}
+  - component: {fileID: 1941536586}
   m_Layer: 0
   m_Name: Wall (1)
   m_TagString: enemy
@@ -954,6 +1016,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59e243a43bdb345f380c0857739c7cba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1941536585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941536577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 864628fc7c38941edacf7cc57f1f43c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onHit: {fileID: 1941536586}
+--- !u!111 &1941536586
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941536577}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: a76928caf416a42798af3f5374ec3a4d, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &6396924020794653817
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -961,6 +1051,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: soliderM
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4433101726349558153, guid: 03d84d677baea420195ef36470697f88,
         type: 3}
       propertyPath: m_Name
@@ -1051,11 +1145,5 @@ PrefabInstance:
       propertyPath: attackRangeRadius
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 790538167, guid: 03d84d677baea420195ef36470697f88, type: 3}
-      propertyPath: soliderM
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 790538167, guid: 03d84d677baea420195ef36470697f88, type: 3}
-    - {fileID: 790538172, guid: 03d84d677baea420195ef36470697f88, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03d84d677baea420195ef36470697f88, type: 3}

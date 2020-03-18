@@ -18,6 +18,7 @@
           <e p="PassiveObjects" t="Include">
             <e p="PassiveObjectController.cs" t="Include" />
             <e p="PassiveObjectModell.cs" t="Include" />
+            <e p="PassiveObjectView.cs" t="Include" />
           </e>
         </e>
       </e>

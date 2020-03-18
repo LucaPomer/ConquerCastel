@@ -5,10 +5,13 @@ using UnityEngine;
 public class PassiveObjectController : MonoBehaviour
 {
     private PassiveObjectModell passiveObjectModell;
+
+    private PassiveObjectView passiveObjectView;
     // Start is called before the first frame update
     void Start()
     {
         passiveObjectModell = GetComponent<PassiveObjectModell>();
+        passiveObjectView = GetComponent<PassiveObjectView>();
     }
 
     // Update is called once per frame
@@ -21,6 +24,7 @@ public class PassiveObjectController : MonoBehaviour
     {
         Debug.Log("PASIVE OBJECT CONTROLLER : hit");
         passiveObjectModell.ReductHealth(hitPoints);
+        passiveObjectView.PlayHitAnimation();
     }
 
     public bool IsAlive()

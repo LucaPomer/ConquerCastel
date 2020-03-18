@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f8d3d2f2fe04b95a963fed4731ea5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectOfTrigger: {fileID: 790538167}
+  objectOfTriggerController: {fileID: 0}
 --- !u!1 &4345455624621835799
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,8 +121,6 @@ GameObject:
   - component: {fileID: 3280500684020354284}
   - component: {fileID: 995297017849176201}
   - component: {fileID: 790538166}
-  - component: {fileID: 790538167}
-  - component: {fileID: 790538172}
   m_Layer: 0
   m_Name: SoliderBody
   m_TagString: Untagged
@@ -218,10 +216,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   attackDamage: 0
-  attackSpeed: 0
+  attackEveryXSecond: 0
   attackRangeRadius: 0
   lvl: 0
+  target: {fileID: 0}
   movementSpeed: 0.5
+  moving: 1
 --- !u!114 &995297017849176201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,37 +251,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &790538167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4345455624621835799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7ef9ffa6e3e7475ca55a845803d1aee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soliderM: {fileID: 0}
---- !u!114 &790538172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4345455624621835799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98105b18f3b1b4df7ae51297e5ff2f8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  attackDamage: 0
-  attackSpeed: 0
-  attackRangeRadius: 0
-  lvl: 0
-  movementSpeed: 0.2
 --- !u!1 &4433101726349558153
 GameObject:
   m_ObjectHideFlags: 0
