@@ -51,14 +51,12 @@ public class SoliderController : ActiveObjectController
             
             if (soliderM.GetTarget() != null)
             {
-                Debug.Log("SOLIDER CONTROLLER : attacking enemy");
                 //Todo add animation to attack
             }
 
             else
             {
                 soliderM.SetTarget(toAttack);
-                Debug.Log("SOLIDER CONTROLLER : attacking and adding enemy");
             }
             
         }

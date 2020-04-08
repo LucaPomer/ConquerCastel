@@ -22,7 +22,6 @@ public class TriggerRadius : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("entered vision trigger");
         //Todo remove redundent step
             objectOfTriggerController.SetTarget(other.gameObject);
             

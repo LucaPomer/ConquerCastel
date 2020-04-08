@@ -13,13 +13,12 @@ public class AttackRadius : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("ATTACK RADIUS : entered attack trigger");
         activeV.Attack(other.gameObject);
     }
     
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("ATTACK RADIUS : exit trigger");
+        
     }
     
     

@@ -35,7 +35,7 @@ public class ActiveObjectModell : MonoBehaviour
         if (target==null && targetToSet.CompareTag("enemy"))
         {
             this.target = targetToSet;
-            Debug.Log("set Target");
+         //   Debug.Log("set Target");
         }
         
     }

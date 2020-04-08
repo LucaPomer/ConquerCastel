@@ -106,7 +106,6 @@ public class ActiveObjectController : MonoBehaviour
     
     private bool IsAlive()
     {
-        Debug.Log(" testing is alive " + activeObjectModell.IsAlive());
         return activeObjectModell.IsAlive();
     }
 

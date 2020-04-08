@@ -22,7 +22,7 @@ public class PassiveObjectController : MonoBehaviour
 
     public void Hit(float hitPoints)
     {
-        Debug.Log("PASIVE OBJECT CONTROLLER : hit");
+        //Debug.Log("PASIVE OBJECT CONTROLLER : hit");
         passiveObjectModell.ReductHealth(hitPoints);
         passiveObjectView.PlayHitAnimation();
     }

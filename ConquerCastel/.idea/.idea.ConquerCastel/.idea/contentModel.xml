@@ -20,6 +20,9 @@
             <e p="PassiveObjectModell.cs" t="Include" />
             <e p="PassiveObjectView.cs" t="Include" />
           </e>
+          <e p="UI" t="Include">
+            <e p="InventoryButton.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="ConquerCastel.sln" t="IncludeFlat" />
