@@ -8,6 +8,8 @@ namespace UI
     {
         public GameObject prefabToBeSpawned;
 
+        public Image itemImage;
+     
         public int amountAvailible;
 
         private Button buttonOfItemSlot;
@@ -34,6 +36,7 @@ namespace UI
         public void OnDeselect(BaseEventData eventData)
         {
             Debug.Log(this.gameObject.name + " was  deselected");
+            selected = false;
         }
         
         
