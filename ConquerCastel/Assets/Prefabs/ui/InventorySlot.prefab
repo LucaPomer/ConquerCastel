@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4030586736102028168}
   - component: {fileID: 4030586736102028169}
   m_Layer: 5
-  m_Name: Icon
+  m_Name: ItemImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 4030586736776462726}
   - component: {fileID: 2433084423032012696}
   m_Layer: 5
-  m_Name: itemButton
+  m_Name: inventorySlot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -205,4 +205,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabToBeSpawned: {fileID: 0}
+  itemImage: {fileID: 4030586736102028169}
   amountAvailible: 0

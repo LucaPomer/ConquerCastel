@@ -4,7 +4,7 @@ using UnityEngine.EventSystems; // Required when using Event data.
 
 namespace UI
 {
-    public class InventoryButton : MonoBehaviour, ISelectHandler , IDeselectHandler
+    public class InventorySlot : MonoBehaviour, ISelectHandler , IDeselectHandler
     {
         public GameObject prefabToBeSpawned;
 
@@ -29,14 +29,27 @@ namespace UI
         //Do this when the selectable UI object is selected.
         public void OnSelect(BaseEventData eventData)
         {
-            Debug.Log(this.gameObject.name + " was selected");
             selected = true;
         }
 
         public void OnDeselect(BaseEventData eventData)
         {
-            Debug.Log(this.gameObject.name + " was  deselected");
             selected = false;
+        }
+
+        public void SetItemImage(Sprite toSet)
+        {
+            itemImage.sprite = toSet;
+        }
+
+        public void SetPrefabToSpawn(GameObject toSpawn)
+        {
+            prefabToBeSpawned = toSpawn;
+        }
+
+        public bool GetSelectedStatus()
+        {
+            return selected;
         }
         
         

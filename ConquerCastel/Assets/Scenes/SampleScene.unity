@@ -923,6 +923,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryItems: []
+  scriptablePrefabToItemImage: {fileID: 11400000, guid: aae4c5b72e2a14a81a1fafbdcca626db,
+    type: 2}
   inventoryButtonPrefab: {fileID: 4030586736776462722, guid: 885fcb133a8eb44be9f0d80b835c6cd9,
     type: 3}
 --- !u!1 &1507320059
