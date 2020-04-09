@@ -2,15 +2,13 @@
 
 namespace enums
 {
-    
-        public enum InventoryItemsEnum{
-       
-            SimpleWarrior,
-            BowWarrior,
-            CanonWarrior,
-            Fairy,
-            Witch,
-       
-        }
-    
+    public enum InventoryItemsEnum
+    {
+        None,
+        SimpleWarrior,
+        BowWarrior,
+        CanonWarrior,
+        Fairy,
+        Witch,
+    }
 }

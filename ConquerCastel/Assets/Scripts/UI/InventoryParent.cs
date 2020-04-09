@@ -15,7 +15,7 @@ namespace UI
     
         public GameObject inventoryButtonPrefab;
         
-        private readonly ReactiveProperty<InventoryItemsEnum> selectedItem = new ReactiveProperty<InventoryItemsEnum>();
+        private readonly ReactiveProperty<InventoryItemsEnum> selectedItem = new ReactiveProperty<InventoryItemsEnum>(InventoryItemsEnum.None);
 
         public ReactiveProperty<InventoryItemsEnum> SelectedItem => selectedItem;
 

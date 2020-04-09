@@ -71,6 +71,10 @@ namespace UI
             {
                 inventoryParentOfSlot.ChangeSelectedItem(itemType);
             }
+            else
+            {
+                inventoryParentOfSlot.ChangeSelectedItem(InventoryItemsEnum.None);
+            }
 
             ChangeItemColor();
         }

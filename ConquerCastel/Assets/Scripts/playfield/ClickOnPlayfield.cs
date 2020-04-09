@@ -26,8 +26,19 @@ public class ClickOnPlayfield : MonoBehaviour
     void OnMouseDown()
     {
         // Destroy the gameObject after clicking on it
-        Debug.Log("clicked on playfield" + Input.mousePosition);
+      
         GameObject toSpawn = inventory.GetPrefabToSpawn();
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit)&& toSpawn)
+        {
+            Vector3 clickedPosition = new Vector3(hit.point.x,1,hit.point.z);
+            Debug.Log("clicked on playfield" + clickedPosition);
+            
+            Instantiate( toSpawn
+                , clickedPosition
+                ,Quaternion.identity);
+        }
       /**  Instantiate( toSpawn
             , Camera.main.ScreenToWorldPoint(Input.mousePosition)
             ,Quaternion.identity);**/
