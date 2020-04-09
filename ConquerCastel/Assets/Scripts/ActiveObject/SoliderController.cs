@@ -16,6 +16,11 @@ public class SoliderController : ActiveObjectController
     // Update is called once per frame
     void Update()
     {
+        if (!soliderM.target)
+        {
+            base.SearchForTarget();
+        }
+        
         if (soliderM.GetMovingStatus()==true)
         {
             Move();

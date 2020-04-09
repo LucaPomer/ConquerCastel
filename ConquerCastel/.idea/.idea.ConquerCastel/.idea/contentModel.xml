@@ -20,6 +20,9 @@
             <e p="PassiveObjectModell.cs" t="Include" />
             <e p="PassiveObjectView.cs" t="Include" />
           </e>
+          <e p="playfield" t="Include">
+            <e p="ClickOnPlayfield.cs" t="Include" />
+          </e>
           <e p="scriptableObjects" t="Include">
             <e p="PrefabToItemImage.cs" t="Include" />
           </e>

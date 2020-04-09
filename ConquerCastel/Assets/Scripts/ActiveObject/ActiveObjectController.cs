@@ -20,6 +20,7 @@ public class ActiveObjectController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+ 
         
     }
     
@@ -87,7 +88,7 @@ public class ActiveObjectController : MonoBehaviour
 
     }
 
-    private void SearchForTarget()
+    protected void SearchForTarget()
     {
         Collider[] inAttackRangeColliders = Physics.OverlapSphere(gameObject.transform.position, activeObjectModell.attackRangeRadius);
         int i = 0;
@@ -97,6 +98,7 @@ public class ActiveObjectController : MonoBehaviour
             if (inRange.CompareTag("enemy"))
             {
                 activeObjectModell.SetTarget(inRange);
+                Debug.Log("attacking");
                 Attack(inRange,()=>{});
                 break;
             }
