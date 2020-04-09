@@ -98,7 +98,6 @@ public class ActiveObjectController : MonoBehaviour
             if (inRange.CompareTag("enemy"))
             {
                 activeObjectModell.SetTarget(inRange);
-                Debug.Log("attacking");
                 Attack(inRange,()=>{});
                 break;
             }
