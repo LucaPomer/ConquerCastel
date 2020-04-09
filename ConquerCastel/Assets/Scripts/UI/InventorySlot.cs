@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using enums;
+using UniRx;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems; // Required when using Event data.
 
@@ -9,24 +11,37 @@ namespace UI
         public GameObject prefabToBeSpawned;
 
         public Image itemImage;
-     
+
         public int amountAvailible;
 
         private Button buttonOfItemSlot;
 
         private bool selected;
+
+        private InventoryItemsEnum itemType;
+
+        private InventoryParent inventoryParentOfSlot;
+
+
         // Start is called before the first frame update
         void Start()
         {
             buttonOfItemSlot = GetComponent<Button>();
+
+            inventoryParentOfSlot.SelectedItem
+                .Where(newValue => newValue != itemType)
+                .Subscribe(newValue =>
+            {
+                selected = false;
+                ChangeItemColor();
+            });
         }
 
         // Update is called once per frame
         void Update()
         {
-        
         }
-        
+
 
         public void SetItemImage(Sprite toSet)
         {
@@ -38,15 +53,30 @@ namespace UI
             prefabToBeSpawned = toSpawn;
         }
 
-        public bool GetSelectedStatus()
+        public void SetItemType(InventoryItemsEnum toSet)
         {
-            return selected;
+            itemType = toSet;
         }
+
+        public void SetInventoryParent(InventoryParent parent)
+        {
+            inventoryParentOfSlot = parent;
+        }
+
 
         public void ChangeSelectStatus()
         {
             selected = !selected;
-            Debug.Log("select status "+ selected);
+            if (selected)
+            {
+                inventoryParentOfSlot.ChangeSelectedItem(itemType);
+            }
+
+            ChangeItemColor();
+        }
+
+        private void ChangeItemColor()
+        {
             if (selected)
             {
                 buttonOfItemSlot.GetComponent<Image>().color = Color.blue;
@@ -56,6 +86,5 @@ namespace UI
                 buttonOfItemSlot.GetComponent<Image>().color = Color.white;
             }
         }
-        
     }
 }

@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using enums;
 using scriptableObjects;
+using UniRx;
 using UnityEngine;
 
 namespace UI
@@ -12,11 +14,15 @@ namespace UI
         public PrefabToItemImage scriptablePrefabToItemImage;
     
         public GameObject inventoryButtonPrefab;
+        
+        private readonly ReactiveProperty<InventoryItemsEnum> selectedItem = new ReactiveProperty<InventoryItemsEnum>();
+
+        public ReactiveProperty<InventoryItemsEnum> SelectedItem => selectedItem;
+
         // Start is called before the first frame update
         void Start()
         {
             CreateInventoryItems();
-        
 
         }
 
@@ -24,6 +30,11 @@ namespace UI
         void Update()
         {
         
+        }
+
+        public void ChangeSelectedItem(InventoryItemsEnum newSelected)
+        {
+            selectedItem.Value = newSelected;
         }
 
         private void CreateInventoryItems()
@@ -38,11 +49,26 @@ namespace UI
             }
         }
 
-        private InventorySlot SetInventorySlotData(InventorySlot toSet, int index)
+        private void SetInventorySlotData(InventorySlot toSet, int index)
         {
             toSet.SetItemImage(scriptablePrefabToItemImage.inventoryItemsData[index].imageInInventory);
             toSet.SetPrefabToSpawn(scriptablePrefabToItemImage.inventoryItemsData[index].connectedPrefab);
-            return toSet;
+            toSet.SetItemType(scriptablePrefabToItemImage.inventoryItemsData[index].typeEnum);
+            toSet.SetInventoryParent(this);
+        }
+
+        public GameObject GetPrefabToSpawn()
+        {
+            foreach (var item in scriptablePrefabToItemImage.inventoryItemsData)
+            {
+                if (item.typeEnum == selectedItem.Value)
+                {
+                    Debug.Log("prefab returned" +item.connectedPrefab );
+                    return item.connectedPrefab;
+                }
+            }
+
+            return null;
         }
     
     }

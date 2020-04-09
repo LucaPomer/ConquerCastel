@@ -2,11 +2,523 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0001f5c5-0ebb-4ae0-86ec-84c11b4c1f3c" name="Default Changelist" comment="N">
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample01_ObservableWWW.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample01_ObservableWWW.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample02_ObservableTriggers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample02_ObservableTriggers.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample03_GameObjectAsObservable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample03_GameObjectAsObservable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample04_ConvertFromUnityCallback.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample04_ConvertFromUnityCallback.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample05_ConvertFromCoroutine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample05_ConvertFromCoroutine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample06_ConvertToCoroutine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample06_ConvertToCoroutine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample07_OrchestratIEnumerator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample07_OrchestratIEnumerator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample08_DetectDoubleClick.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample08_DetectDoubleClick.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample09_EventHandling.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample09_EventHandling.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample10_MainThreadDispatcher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample10_MainThreadDispatcher.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample11_Logger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample11_Logger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample12Scene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample12Scene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample12_ReactiveProperty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample12_ReactiveProperty.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample13Scene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample13Scene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample13_ToDoApp.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample13_ToDoApp.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample13_ToDoItem.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/Sample13_ToDoItem.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/UniRx.Examples.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Examples/UniRx.Examples.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/ReadMe.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/ReadMe.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Asynchronous.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Asynchronous/WebRequestExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Asynchronous/WebRequestExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/BooleanDisposable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/BooleanDisposable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/CancellationDisposable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/CancellationDisposable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/CompositeDisposable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/CompositeDisposable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/DictionaryDisposable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/DictionaryDisposable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/Disposable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/Disposable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/DisposableExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/DisposableExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/ICancelable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/ICancelable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/MultipleAssignmentDisposable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/MultipleAssignmentDisposable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/RefCountDisposable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/RefCountDisposable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/ScheduledDisposable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/ScheduledDisposable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/SerialDisposable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/SerialDisposable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/SingleAssignmentDisposable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/SingleAssignmentDisposable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/StableCompositeDisposable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Disposables/StableCompositeDisposable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/EventPattern.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/EventPattern.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/AscynLock.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/AscynLock.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/CancellableTaskCompletionSource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/CancellableTaskCompletionSource.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ExceptionExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ExceptionExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ImmutableList.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ImmutableList.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ListObserver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ListObserver.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/MicroCoroutine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/MicroCoroutine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/PriorityQueue.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/PriorityQueue.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/PromiseHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/PromiseHelper.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ScheduledItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ScheduledItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ThreadSafeQueueWorker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ThreadSafeQueueWorker.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/UnityEqualityComparer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/UnityEqualityComparer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notification.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notification.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers/BooleanNotifier.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers/BooleanNotifier.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers/CountNotifier.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers/CountNotifier.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers/MessageBroker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers/MessageBroker.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers/ScheduledNotifier.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Notifiers/ScheduledNotifier.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Aggregate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Aggregate.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Awaiter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Awaiter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Binding.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Binding.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Blocking.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Blocking.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Concatenate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Concatenate.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Concurrency.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Concurrency.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Conversions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Conversions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Creation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Creation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.ErrorHandling.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.ErrorHandling.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Events.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Events.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.FromAsync.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.FromAsync.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Joins.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Joins.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Paging.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Paging.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Time.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.Time.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Observer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Aggregate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Aggregate.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Amb.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Amb.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/AsObservable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/AsObservable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/AsSingleUnitObservable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/AsSingleUnitObservable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/AsUnitObservable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/AsUnitObservable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Buffer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Buffer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Cast.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Cast.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Catch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Catch.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/CombineLatest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/CombineLatest.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Concat.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Concat.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ContinueWith.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ContinueWith.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Create.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Create.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/DefaultIfEmpty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/DefaultIfEmpty.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Defer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Defer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Delay.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Delay.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/DelaySubscription.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/DelaySubscription.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Dematerialize.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Dematerialize.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Distinct.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Distinct.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/DistinctUntilChanged.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/DistinctUntilChanged.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Do.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Do.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Empty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Empty.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Finally.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Finally.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/First.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/First.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ForEachAsync.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ForEachAsync.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/FromEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/FromEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/GroupBy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/GroupBy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/IgnoreElements.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/IgnoreElements.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Last.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Last.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Materialize.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Materialize.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Merge.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Merge.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Never.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Never.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ObserveOn.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ObserveOn.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/OfType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/OfType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/OperatorObservableBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/OperatorObservableBase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/OperatorObserverBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/OperatorObserverBase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/PairWise.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/PairWise.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Range.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Range.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/RefCount.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/RefCount.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Repeat.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Repeat.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/RepeatSafe.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/RepeatSafe.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Return.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Return.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Sample.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Sample.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Scan.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Scan.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Select.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Select.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SelectMany.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SelectMany.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SelectWhere.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SelectWhere.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Single.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Single.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Skip.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Skip.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SkipUntil.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SkipUntil.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SkipWhile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SkipWhile.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Start.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Start.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/StartWith.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/StartWith.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SubscribeOn.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SubscribeOn.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Switch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Switch.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Synchronize.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Synchronize.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SynchronizedObserver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/SynchronizedObserver.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Take.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Take.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/TakeLast.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/TakeLast.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/TakeUntil.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/TakeUntil.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/TakeWhile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/TakeWhile.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Throttle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Throttle.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ThrottleFirst.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ThrottleFirst.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Throw.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Throw.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/TimeInterval.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/TimeInterval.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Timeout.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Timeout.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Timer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Timer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Timestamp.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Timestamp.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ToArray.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ToArray.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ToList.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ToList.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ToObservable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ToObservable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Wait.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Wait.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/WhenAll.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/WhenAll.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Where.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Where.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/WhereSelect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/WhereSelect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/WithLatestFrom.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/WithLatestFrom.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Zip.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Zip.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ZipLatest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/ZipLatest.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Pair.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Pair.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/CurrentThreadScheduler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/CurrentThreadScheduler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/IScheduler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/IScheduler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/ImmediateScheduler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/ImmediateScheduler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/Scheduler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/Scheduler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/ThreadPoolScheduler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Schedulers/ThreadPoolScheduler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/AsyncSubject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/AsyncSubject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/BehaviorSubject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/BehaviorSubject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/ConnectableObservable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/ConnectableObservable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/ISubject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/ISubject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/ReplaySubject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/ReplaySubject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/Subject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/Subject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/SubjectExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Subjects/SubjectExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/IObservable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/IObservable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/IObserver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/IObserver.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/IOptimizedObservable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/IOptimizedObservable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/IProgress.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/IProgress.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/Tuple.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/Tuple.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/Unit.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/Unit.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Tasks.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Tasks/TaskObservableExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Tasks/TaskObservableExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/TimeInterval.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/TimeInterval.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Timestamped.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Timestamped.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UniRx.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UniRx.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/AsyncOperationExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/AsyncOperationExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/CancellationToken.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/CancellationToken.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/CoroutineAsyncBridge.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/CoroutineAsyncBridge.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/LogEntry.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/LogEntry.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/LogEntryExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/LogEntryExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/Logger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/Logger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/ObservableDebugExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/ObservableDebugExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/ObservableLogger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/ObservableLogger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/UnityDebugSink.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Diagnostics/UnityDebugSink.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/FrameInterval.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/FrameInterval.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/InspectableReactiveProperty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/InspectableReactiveProperty.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/InspectorDisplayDrawer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/InspectorDisplayDrawer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/LifetimeDisposableExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/LifetimeDisposableExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/MainThreadDispatcher.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/MainThreadDispatcher.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/MainThreadScheduler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/MainThreadScheduler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Observable.Unity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Observable.Unity.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ObservableWWW.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ObservableWWW.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ObserveExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ObserveExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/BatchFrame.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/BatchFrame.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/DelayFrame.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/DelayFrame.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/DelayFrameSubscription.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/DelayFrameSubscription.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/FrameInterval.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/FrameInterval.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/FrameTimeInterval.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/FrameTimeInterval.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/FromCoroutine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/FromCoroutine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/RepeatUntil.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/RepeatUntil.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/SampleFrame.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/SampleFrame.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/SubscribeOnMainThread.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/SubscribeOnMainThread.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/ThrottleFirstFrame.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/ThrottleFirstFrame.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/ThrottleFrame.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/ThrottleFrame.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/TimeoutFrame.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Operators/TimeoutFrame.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveCollection.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveCollection.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveCommand.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveDictionary.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveDictionary.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveProperty.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveProperty.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ScenePlaybackDetector.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ScenePlaybackDetector.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Toolkit.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Toolkit/ObjectPool.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Toolkit/ObjectPool.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableAnimatorTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableAnimatorTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableBeginDragTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableBeginDragTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableCancelTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableCancelTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableCanvasGroupChangedTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableCanvasGroupChangedTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableCollision2DTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableCollision2DTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableCollisionTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableCollisionTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableDeselectTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableDeselectTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableDestroyTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableDestroyTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableDragTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableDragTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableDropTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableDropTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableEnableTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableEnableTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableEndDragTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableEndDragTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableEventTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableEventTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableFixedUpdateTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableFixedUpdateTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableInitializePotentialDragTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableInitializePotentialDragTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableJointTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableJointTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableLateUpdateTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableLateUpdateTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableMouseTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableMouseTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableMoveTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableMoveTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableParticleTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableParticleTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerClickTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerClickTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerDownTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerDownTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerEnterTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerEnterTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerExitTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerExitTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerUpTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservablePointerUpTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableRectTransformTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableRectTransformTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableScrollTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableScrollTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableSelectTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableSelectTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableStateMachineTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableStateMachineTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableSubmitTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableSubmitTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTransformChangedTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTransformChangedTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTrigger2DTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTrigger2DTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTriggerBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTriggerBase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTriggerExtensions.Component.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTriggerExtensions.Component.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTriggerExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTriggerExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTriggerTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableTriggerTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableUpdateSelectedTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableUpdateSelectedTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableUpdateTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableUpdateTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableVisibleTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/Triggers/ObservableVisibleTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/UnityEventExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/UnityEventExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/UnityGraphicExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/UnityGraphicExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/UnityUIComponentExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/UnityUIComponentExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/YieldInstructionCache.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/YieldInstructionCache.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityWinRTBridge.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityWinRTBridge/Thread.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityWinRTBridge/Thread.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityWinRTBridge/ThreadPoolScheduler_UnityWinRT.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityWinRTBridge/ThreadPoolScheduler_UnityWinRT.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ConquerCastel/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConquerCastel/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ConquerCastel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConquerCastel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ui/InventorySlot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ui/InventorySlot.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ActiveObject/ActiveObjectController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ActiveObject/ActiveObjectController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/InventoryParent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InventoryParent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/InventorySlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/InventorySlot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/playfield/ClickOnPlayfield.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playfield/ClickOnPlayfield.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/scriptableObjects/PrefabToItemImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/scriptableObjects/PrefabToItemImage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/scriptableObjects/PrefabToItemImageObject.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/scriptableObjects/PrefabToItemImageObject.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,132 +530,65 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/ActiveObjectController.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="571">
-                  <caret line="104" column="9" lean-forward="true" selection-start-line="104" selection-start-column="9" selection-end-line="104" selection-end-column="9" />
-                  <folding>
-                    <marker date="1586438665222" expanded="false" signature="6:92" ph="..." />
-                    <marker date="1586438665222" expanded="true" signature="145:3213" ph="{...}" />
-                    <marker date="1586438665222" expanded="true" signature="276:353" ph="{...}" />
-                    <marker date="1586438665222" expanded="true" signature="371:409" ph="{...}" />
-                    <marker date="1586438665222" expanded="true" signature="467:490" ph="{...}" />
-                    <marker date="1586438665222" expanded="true" signature="532:595" ph="{...}" />
-                    <marker date="1586438665222" expanded="true" signature="641:699" ph="{...}" />
-                    <marker date="1586438665222" expanded="true" signature="771:937" ph="{...}" />
-                    <marker date="1586438665222" expanded="true" signature="833:931" ph="{...}" />
-                    <marker date="1586438665222" expanded="true" signature="1087:2567" ph="{...}" />
-                    <marker date="1586438665222" expanded="true" signature="1396:2394" ph="{...}" />
-                    <marker date="1586438665222" expanded="true" signature="1457:1892" ph="{...}" />
-                    <marker date="1586438665222" expanded="true" signature="1601:1732" ph="{...}" />
-                    <marker date="1586438665222" expanded="true" signature="1752:1878" ph="{...}" />
-                    <marker date="1586438665222" expanded="true" signature="1937:2383" ph="{...}" />
-                    <marker date="1586438665222" expanded="true" signature="2085:2220" ph="{...}" />
-                    <marker date="1586438665222" expanded="true" signature="2241:2369" ph="{...}" />
-                    <marker date="1586438665222" expanded="true" signature="2403:2511" ph="/* activeObjectModell.ResetTargetToNull(); ... */" />
-                    <marker date="1586438665222" expanded="true" signature="2605:3121" ph="{...}" />
-                    <marker date="1586438665222" expanded="true" signature="2816:3115" ph="{...}" />
-                    <marker date="1586438665222" expanded="true" signature="2942:3088" ph="{...}" />
-                    <marker date="1586438665222" expanded="true" signature="3153:3210" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/PassiveObjects/PassiveObjectController.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
-                  <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-                  <folding>
-                    <marker date="1586340971464" expanded="false" signature="6:78" ph="..." />
-                    <marker date="1586340971464" expanded="true" signature="132:819" ph="{...}" />
-                    <marker date="1586340971464" expanded="true" signature="307:449" ph="{...}" />
-                    <marker date="1586340971464" expanded="true" signature="507:528" ph="{...}" />
-                    <marker date="1586340971464" expanded="true" signature="566:732" ph="{...}" />
-                    <marker date="1586340971464" expanded="true" signature="759:817" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/PassiveObjects/PassiveObjectModell.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
-                  <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-                  <folding>
-                    <marker date="1584455148533" expanded="false" signature="6:78" ph="..." />
-                    <marker date="1584455148533" expanded="true" signature="128:756" ph="{...}" />
-                    <marker date="1584455148533" expanded="true" signature="222:314" ph="{...}" />
-                    <marker date="1584455148533" expanded="true" signature="385:406" ph="{...}" />
-                    <marker date="1584455148533" expanded="true" signature="464:494" ph="{...}" />
-                    <marker date="1584455148533" expanded="true" signature="561:688" ph="{...}" />
-                    <marker date="1584455148533" expanded="true" signature="621:682" ph="{...}" />
-                    <marker date="1584455148533" expanded="true" signature="715:754" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/PassiveObjects/PassiveObjectView.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
-                  <caret line="26" selection-start-line="26" selection-end-line="26" />
-                  <folding>
-                    <marker date="1584553006476" expanded="false" signature="6:137" ph="..." />
-                    <marker date="1584553006476" expanded="true" signature="185:456" ph="{...}" />
-                    <marker date="1584553006476" expanded="true" signature="285:305" ph="{...}" />
-                    <marker date="1584553006476" expanded="true" signature="363:384" ph="{...}" />
-                    <marker date="1584553006476" expanded="true" signature="420:454" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/scriptableObjects/PrefabToItemImage.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+                <state relative-caret-position="288">
+                  <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
                   <folding>
-                    <marker date="1586373469533" expanded="false" signature="6:66" ph="..." />
-                    <marker date="1586373469533" expanded="true" signature="95:475" ph="{...}" />
-                    <marker date="1586373469533" expanded="true" signature="205:473" ph="{...}" />
-                    <marker date="1586373469533" expanded="true" signature="356:467" ph="{...}" />
+                    <marker date="1586444757745" expanded="false" signature="6:79" ph="..." />
+                    <marker date="1586444757745" expanded="true" signature="108:537" ph="{...}" />
+                    <marker date="1586444757745" expanded="true" signature="218:535" ph="{...}" />
+                    <marker date="1586444757745" expanded="true" signature="369:529" ph="{...}" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/ActiveObjectView.cs">
+            <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/InventorySlot.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="304">
-                  <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+                <state relative-caret-position="387">
+                  <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
                   <folding>
-                    <marker date="1583771109274" expanded="false" signature="6:78" ph="..." />
-                    <marker date="1583771109274" expanded="true" signature="125:444" ph="{...}" />
-                    <marker date="1583771109274" expanded="true" signature="240:261" ph="{...}" />
-                    <marker date="1583771109274" expanded="true" signature="319:340" ph="{...}" />
-                    <marker date="1583771109274" expanded="true" signature="385:442" ph="{...}" />
+                    <marker date="1586448859218" expanded="false" signature="6:98" ph="..." />
+                    <marker date="1586448859218" expanded="true" signature="147:2009" ph="{...}" />
+                    <marker date="1586448859218" expanded="true" signature="196:2007" ph="{...}" />
+                    <marker date="1586448859218" expanded="true" signature="573:891" ph="{...}" />
+                    <marker date="1586448859218" expanded="true" signature="782:879" ph="{...}" />
+                    <marker date="1586448859218" expanded="true" signature="957:977" ph="{...}" />
+                    <marker date="1586448859218" expanded="true" signature="1026:1084" ph="{...}" />
+                    <marker date="1586448859218" expanded="true" signature="1142:1203" ph="{...}" />
+                    <marker date="1586448859218" expanded="true" signature="1262:1312" ph="{...}" />
+                    <marker date="1586448859218" expanded="true" signature="1376:1440" ph="{...}" />
+                    <marker date="1586448859218" expanded="true" signature="1483:1691" ph="{...}" />
+                    <marker date="1586448859218" expanded="true" signature="1553:1649" ph="{...}" />
+                    <marker date="1586448859218" expanded="true" signature="1731:2001" ph="{...}" />
+                    <marker date="1586448859218" expanded="true" signature="1767:1870" ph="{...}" />
+                    <marker date="1586448859218" expanded="true" signature="1887:1991" ph="{...}" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/SoliderView.cs">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/InventoryParent.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="224">
-                  <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+                <state relative-caret-position="660">
+                  <caret line="67" column="17" lean-forward="true" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
                   <folding>
-                    <marker date="1581531420892" expanded="false" signature="6:78" ph="..." />
-                    <marker date="1581531420892" expanded="true" signature="123:297" ph="{...}" />
-                    <marker date="1581531420892" expanded="true" signature="195:216" ph="{...}" />
-                    <marker date="1581531420892" expanded="true" signature="274:295" ph="{...}" />
+                    <marker date="1586448950155" expanded="false" signature="6:103" ph="..." />
+                    <marker date="1586448950155" expanded="true" signature="117:2360" ph="{...}" />
+                    <marker date="1586448950155" expanded="true" signature="168:2358" ph="{...}" />
+                    <marker date="1586448950155" expanded="true" signature="707:764" ph="{...}" />
+                    <marker date="1586448950155" expanded="true" signature="830:859" ph="{...}" />
+                    <marker date="1586448950155" expanded="true" signature="931:997" ph="{...}" />
+                    <marker date="1586448950155" expanded="true" signature="1042:1486" ph="{...}" />
+                    <marker date="1586448950155" expanded="true" signature="1111:1476" ph="{...}" />
+                    <marker date="1586448950155" expanded="true" signature="1561:1931" ph="{...}" />
+                    <marker date="1586448950155" expanded="true" signature="1977:2347" ph="{...}" />
+                    <marker date="1586448950155" expanded="true" signature="2068:2311" ph="{...}" />
+                    <marker date="1586448950155" expanded="true" signature="2139:2297" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -154,38 +599,13 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/ActiveObjectModell.cs">
+            <entry file="file://$PROJECT_DIR$/Assets/Scripts/enums/InventoryItemsEnum.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="681">
-                  <caret line="57" column="38" lean-forward="true" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+                <state relative-caret-position="80">
+                  <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
                   <folding>
-                    <marker date="1586341004126" expanded="false" signature="6:111" ph="..." />
-                    <marker date="1586341004126" expanded="true" signature="160:1156" ph="{...}" />
-                    <marker date="1586341004126" expanded="true" signature="417:438" ph="{...}" />
-                    <marker date="1586341004126" expanded="true" signature="496:517" ph="{...}" />
-                    <marker date="1586341004126" expanded="true" signature="568:748" ph="{...}" />
-                    <marker date="1586341004126" expanded="true" signature="635:733" ph="{...}" />
-                    <marker date="1586341004126" expanded="true" signature="785:820" ph="{...}" />
-                    <marker date="1586341004126" expanded="true" signature="855:890" ph="{...}" />
-                    <marker date="1586341004126" expanded="true" signature="941:1068" ph="{...}" />
-                    <marker date="1586341004126" expanded="true" signature="1001:1062" ph="{...}" />
-                    <marker date="1586341004126" expanded="true" signature="1099:1138" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/AttackRadius.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-                  <folding>
-                    <marker date="1586341051627" expanded="false" signature="6:78" ph="..." />
-                    <marker date="1586341051627" expanded="true" signature="121:439" ph="{...}" />
-                    <marker date="1586341051627" expanded="true" signature="230:251" ph="{...}" />
-                    <marker date="1586341051627" expanded="true" signature="300:354" ph="{...}" />
-                    <marker date="1586341051627" expanded="true" signature="406:427" ph="{...}" />
+                    <marker date="1586444759969" expanded="true" signature="35:230" ph="{...}" />
+                    <marker date="1586444759969" expanded="true" signature="81:223" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -195,7 +615,7 @@
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/SoliderController.cs">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="288">
-                  <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+                  <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
                   <folding>
                     <marker date="1586428106958" expanded="false" signature="6:145" ph="..." />
                     <marker date="1586428106958" expanded="true" signature="202:1798" ph="{...}" />
@@ -217,57 +637,16 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/InventorySlot.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="617">
-                  <caret line="51" column="69" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
-                  <folding>
-                    <marker date="1586439458952" expanded="false" signature="6:72" ph="..." />
-                    <marker date="1586439458952" expanded="true" signature="121:1369" ph="{...}" />
-                    <marker date="1586439458952" expanded="true" signature="170:1367" ph="{...}" />
-                    <marker date="1586439458952" expanded="true" signature="448:523" ph="{...}" />
-                    <marker date="1586439458952" expanded="true" signature="589:618" ph="{...}" />
-                    <marker date="1586439458952" expanded="true" signature="675:733" ph="{...}" />
-                    <marker date="1586439458952" expanded="true" signature="791:852" ph="{...}" />
-                    <marker date="1586439458952" expanded="true" signature="893:942" ph="{...}" />
-                    <marker date="1586439458952" expanded="true" signature="984:1352" ph="{...}" />
-                    <marker date="1586439458952" expanded="true" signature="1105:1221" ph="{...}" />
-                    <marker date="1586439458952" expanded="true" signature="1238:1342" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/playfield/ClickOnPlayfield.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+                <state relative-caret-position="464">
+                  <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
                   <folding>
-                    <marker date="1586426570311" expanded="false" signature="6:97" ph="..." />
-                    <marker date="1586426570311" expanded="true" signature="144:478" ph="{...}" />
-                    <marker date="1586426570311" expanded="true" signature="216:237" ph="{...}" />
-                    <marker date="1586426570311" expanded="true" signature="295:316" ph="{...}" />
-                    <marker date="1586426570311" expanded="true" signature="344:476" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/InventoryParent.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="752">
-                  <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-                  <folding>
-                    <marker date="1586425309784" expanded="true" signature="6:77" ph="..." />
-                    <marker date="1586425309784" expanded="true" signature="91:1471" ph="{...}" />
-                    <marker date="1586425309784" expanded="true" signature="142:1469" ph="{...}" />
-                    <marker date="1586425309784" expanded="true" signature="467:533" ph="{...}" />
-                    <marker date="1586425309784" expanded="true" signature="599:628" ph="{...}" />
-                    <marker date="1586425309784" expanded="true" signature="673:1117" ph="{...}" />
-                    <marker date="1586425309784" expanded="true" signature="742:1107" ph="{...}" />
-                    <marker date="1586425309784" expanded="true" signature="1201:1458" ph="{...}" />
+                    <marker date="1586449073513" expanded="true" signature="6:121" ph="..." />
+                    <marker date="1586449073513" expanded="true" signature="169:761" ph="{...}" />
+                    <marker date="1586449073513" expanded="true" signature="289:310" ph="{...}" />
+                    <marker date="1586449073513" expanded="true" signature="368:389" ph="{...}" />
+                    <marker date="1586449073513" expanded="true" signature="417:759" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -276,7 +655,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/SoliderModell.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="16">
+                <state>
                   <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
                   <folding>
                     <marker date="1583775210073" expanded="false" signature="6:78" ph="..." />
@@ -317,6 +696,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/906920AD-697C-461A-BADF-57E8EA6D00F9/6e/6260c829/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85963591-C1A0-4AAD-8364-45DB604E7807/50/d8eebd6b/RenderPipelineManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/enums/InventoryItemsEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Solider.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/85963591-C1A0-4AAD-8364-45DB604E7807/f2/2d3f24b4/ScriptableRuntimeReflectionSystemWrapper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/scriptableObjects/PrefabToItemImage.cs" root0="FORCE_HIGHLIGHTING" />
@@ -344,13 +724,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ActiveObject/ActiveObjectModell.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ActiveObject/TriggerRadius.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ActiveObject/AttackRadius.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/scriptableObjects/PrefabToItemImage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/InventoryButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/InventoryParent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/playfield/ClickOnPlayfield.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ActiveObject/SoliderController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ActiveObject/ActiveObjectController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/enums/InventoryItemsEnum.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/scriptableObjects/PrefabToItemImage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/InventorySlot.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/InventoryParent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/playfield/ClickOnPlayfield.cs" />
       </list>
     </option>
   </component>
@@ -398,6 +779,18 @@
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="playfield" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="scriptableObjects" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
               <item name="UI" type="1045f7f1:UnityExplorerNode" />
             </path>
           </expand>
@@ -434,10 +827,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="13466">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="817">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="13466" />
+      <option name="pid" value="817" />
       <method v="2" />
     </configuration>
   </component>
@@ -455,12 +848,12 @@
       <workItem from="1581357329923" duration="19709000" />
       <workItem from="1583766174880" duration="6697000" />
       <workItem from="1584379917402" duration="15252000" />
-      <workItem from="1586340212376" duration="12099000" />
+      <workItem from="1586340212376" duration="18887000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56673000" />
+    <option name="totallyTimeSpent" value="63461000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -622,7 +1015,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/SoliderModell.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
+        <state>
           <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
           <folding>
             <marker date="1583775210073" expanded="false" signature="6:78" ph="..." />
@@ -631,75 +1024,6 @@
             <marker date="1583775210073" expanded="true" signature="350:371" ph="{...}" />
             <marker date="1583775210073" expanded="true" signature="406:441" ph="{...}" />
             <marker date="1583775210073" expanded="true" signature="487:524" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/InventoryParent.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding>
-            <marker date="1586425309784" expanded="true" signature="6:77" ph="..." />
-            <marker date="1586425309784" expanded="true" signature="91:1471" ph="{...}" />
-            <marker date="1586425309784" expanded="true" signature="142:1469" ph="{...}" />
-            <marker date="1586425309784" expanded="true" signature="467:533" ph="{...}" />
-            <marker date="1586425309784" expanded="true" signature="599:628" ph="{...}" />
-            <marker date="1586425309784" expanded="true" signature="673:1117" ph="{...}" />
-            <marker date="1586425309784" expanded="true" signature="742:1107" ph="{...}" />
-            <marker date="1586425309784" expanded="true" signature="1201:1458" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/playfield/ClickOnPlayfield.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <marker date="1586426570311" expanded="false" signature="6:97" ph="..." />
-            <marker date="1586426570311" expanded="true" signature="144:478" ph="{...}" />
-            <marker date="1586426570311" expanded="true" signature="216:237" ph="{...}" />
-            <marker date="1586426570311" expanded="true" signature="295:316" ph="{...}" />
-            <marker date="1586426570311" expanded="true" signature="344:476" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PassiveObjects/PassiveObjectController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-          <folding>
-            <marker date="1586340971464" expanded="false" signature="6:78" ph="..." />
-            <marker date="1586340971464" expanded="true" signature="132:819" ph="{...}" />
-            <marker date="1586340971464" expanded="true" signature="307:449" ph="{...}" />
-            <marker date="1586340971464" expanded="true" signature="507:528" ph="{...}" />
-            <marker date="1586340971464" expanded="true" signature="566:732" ph="{...}" />
-            <marker date="1586340971464" expanded="true" signature="759:817" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/SoliderController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-          <folding>
-            <marker date="1586428106958" expanded="false" signature="6:145" ph="..." />
-            <marker date="1586428106958" expanded="true" signature="202:1798" ph="{...}" />
-            <marker date="1586428106958" expanded="true" signature="309:330" ph="{...}" />
-            <marker date="1586428106958" expanded="true" signature="388:585" ph="{...}" />
-            <marker date="1586428106958" expanded="true" signature="424:480" ph="{...}" />
-            <marker date="1586428106958" expanded="true" signature="535:575" ph="{...}" />
-            <marker date="1586428106958" expanded="true" signature="610:1141" ph="{...}" />
-            <marker date="1586428106958" expanded="true" signature="656:951" ph="{...}" />
-            <marker date="1586428106958" expanded="true" signature="964:1135" ph="{...}" />
-            <marker date="1586428106958" expanded="true" signature="1216:1686" ph="{...}" />
-            <marker date="1586428106958" expanded="true" signature="1280:1671" ph="{...}" />
-            <marker date="1586428106958" expanded="true" signature="1481:1556" ph="{...}" />
-            <marker date="1586428106958" expanded="true" signature="1574:1648" ph="{...}" />
-            <marker date="1586428106958" expanded="true" signature="1717:1794" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -732,16 +1056,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/AttackRadius.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/ActiveObjectView.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="304">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
           <folding>
-            <marker date="1586341051627" expanded="false" signature="6:78" ph="..." />
-            <marker date="1586341051627" expanded="true" signature="121:439" ph="{...}" />
-            <marker date="1586341051627" expanded="true" signature="230:251" ph="{...}" />
-            <marker date="1586341051627" expanded="true" signature="300:354" ph="{...}" />
-            <marker date="1586341051627" expanded="true" signature="406:427" ph="{...}" />
+            <marker date="1583771109274" expanded="false" signature="6:78" ph="..." />
+            <marker date="1583771109274" expanded="true" signature="125:444" ph="{...}" />
+            <marker date="1583771109274" expanded="true" signature="240:261" ph="{...}" />
+            <marker date="1583771109274" expanded="true" signature="319:340" ph="{...}" />
+            <marker date="1583771109274" expanded="true" signature="385:442" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -749,7 +1073,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/ActiveObjectModell.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="681">
-          <caret line="57" column="38" lean-forward="true" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+          <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
           <folding>
             <marker date="1586341004126" expanded="false" signature="6:111" ph="..." />
             <marker date="1586341004126" expanded="true" signature="160:1156" ph="{...}" />
@@ -766,29 +1090,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/ActiveObjectView.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/SoliderController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        <state relative-caret-position="288">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           <folding>
-            <marker date="1583771109274" expanded="false" signature="6:78" ph="..." />
-            <marker date="1583771109274" expanded="true" signature="125:444" ph="{...}" />
-            <marker date="1583771109274" expanded="true" signature="240:261" ph="{...}" />
-            <marker date="1583771109274" expanded="true" signature="319:340" ph="{...}" />
-            <marker date="1583771109274" expanded="true" signature="385:442" ph="{...}" />
+            <marker date="1586428106958" expanded="false" signature="6:145" ph="..." />
+            <marker date="1586428106958" expanded="true" signature="202:1798" ph="{...}" />
+            <marker date="1586428106958" expanded="true" signature="309:330" ph="{...}" />
+            <marker date="1586428106958" expanded="true" signature="388:585" ph="{...}" />
+            <marker date="1586428106958" expanded="true" signature="424:480" ph="{...}" />
+            <marker date="1586428106958" expanded="true" signature="535:575" ph="{...}" />
+            <marker date="1586428106958" expanded="true" signature="610:1141" ph="{...}" />
+            <marker date="1586428106958" expanded="true" signature="656:951" ph="{...}" />
+            <marker date="1586428106958" expanded="true" signature="964:1135" ph="{...}" />
+            <marker date="1586428106958" expanded="true" signature="1216:1686" ph="{...}" />
+            <marker date="1586428106958" expanded="true" signature="1280:1671" ph="{...}" />
+            <marker date="1586428106958" expanded="true" signature="1481:1556" ph="{...}" />
+            <marker date="1586428106958" expanded="true" signature="1574:1648" ph="{...}" />
+            <marker date="1586428106958" expanded="true" signature="1717:1794" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/scriptableObjects/PrefabToItemImage.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/AttackRadius.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="288">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding>
-            <marker date="1586373469533" expanded="false" signature="6:66" ph="..." />
-            <marker date="1586373469533" expanded="true" signature="95:475" ph="{...}" />
-            <marker date="1586373469533" expanded="true" signature="205:473" ph="{...}" />
-            <marker date="1586373469533" expanded="true" signature="356:467" ph="{...}" />
+            <marker date="1586341051627" expanded="false" signature="6:78" ph="..." />
+            <marker date="1586341051627" expanded="true" signature="121:439" ph="{...}" />
+            <marker date="1586341051627" expanded="true" signature="230:251" ph="{...}" />
+            <marker date="1586341051627" expanded="true" signature="300:354" ph="{...}" />
+            <marker date="1586341051627" expanded="true" signature="406:427" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/enums/InventoryItemsEnum.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding>
+            <marker date="1586444759969" expanded="true" signature="35:230" ph="{...}" />
+            <marker date="1586444759969" expanded="true" signature="81:223" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -824,10 +1169,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PassiveObjects/PassiveObjectController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <folding>
+            <marker date="1586340971464" expanded="false" signature="6:78" ph="..." />
+            <marker date="1586340971464" expanded="true" signature="132:819" ph="{...}" />
+            <marker date="1586340971464" expanded="true" signature="307:449" ph="{...}" />
+            <marker date="1586340971464" expanded="true" signature="507:528" ph="{...}" />
+            <marker date="1586340971464" expanded="true" signature="566:732" ph="{...}" />
+            <marker date="1586340971464" expanded="true" signature="759:817" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/ActiveObjectController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="571">
-          <caret line="104" column="9" lean-forward="true" selection-start-line="104" selection-start-column="9" selection-end-line="104" selection-end-column="9" />
+          <caret line="104" column="9" selection-start-line="104" selection-start-column="9" selection-end-line="104" selection-end-column="9" />
           <folding>
             <marker date="1586438665222" expanded="false" signature="6:92" ph="..." />
             <marker date="1586438665222" expanded="true" signature="145:3213" ph="{...}" />
@@ -855,22 +1215,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/scriptableObjects/PrefabToItemImage.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <marker date="1586444757745" expanded="false" signature="6:79" ph="..." />
+            <marker date="1586444757745" expanded="true" signature="108:537" ph="{...}" />
+            <marker date="1586444757745" expanded="true" signature="218:535" ph="{...}" />
+            <marker date="1586444757745" expanded="true" signature="369:529" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/InventorySlot.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="51" column="69" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
+        <state relative-caret-position="387">
+          <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
           <folding>
-            <marker date="1586439458952" expanded="false" signature="6:72" ph="..." />
-            <marker date="1586439458952" expanded="true" signature="121:1369" ph="{...}" />
-            <marker date="1586439458952" expanded="true" signature="170:1367" ph="{...}" />
-            <marker date="1586439458952" expanded="true" signature="448:523" ph="{...}" />
-            <marker date="1586439458952" expanded="true" signature="589:618" ph="{...}" />
-            <marker date="1586439458952" expanded="true" signature="675:733" ph="{...}" />
-            <marker date="1586439458952" expanded="true" signature="791:852" ph="{...}" />
-            <marker date="1586439458952" expanded="true" signature="893:942" ph="{...}" />
-            <marker date="1586439458952" expanded="true" signature="984:1352" ph="{...}" />
-            <marker date="1586439458952" expanded="true" signature="1105:1221" ph="{...}" />
-            <marker date="1586439458952" expanded="true" signature="1238:1342" ph="{...}" />
+            <marker date="1586448859218" expanded="false" signature="6:98" ph="..." />
+            <marker date="1586448859218" expanded="true" signature="147:2009" ph="{...}" />
+            <marker date="1586448859218" expanded="true" signature="196:2007" ph="{...}" />
+            <marker date="1586448859218" expanded="true" signature="573:891" ph="{...}" />
+            <marker date="1586448859218" expanded="true" signature="782:879" ph="{...}" />
+            <marker date="1586448859218" expanded="true" signature="957:977" ph="{...}" />
+            <marker date="1586448859218" expanded="true" signature="1026:1084" ph="{...}" />
+            <marker date="1586448859218" expanded="true" signature="1142:1203" ph="{...}" />
+            <marker date="1586448859218" expanded="true" signature="1262:1312" ph="{...}" />
+            <marker date="1586448859218" expanded="true" signature="1376:1440" ph="{...}" />
+            <marker date="1586448859218" expanded="true" signature="1483:1691" ph="{...}" />
+            <marker date="1586448859218" expanded="true" signature="1553:1649" ph="{...}" />
+            <marker date="1586448859218" expanded="true" signature="1731:2001" ph="{...}" />
+            <marker date="1586448859218" expanded="true" signature="1767:1870" ph="{...}" />
+            <marker date="1586448859218" expanded="true" signature="1887:1991" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/InventoryParent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="67" column="17" lean-forward="true" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
+          <folding>
+            <marker date="1586448950155" expanded="false" signature="6:103" ph="..." />
+            <marker date="1586448950155" expanded="true" signature="117:2360" ph="{...}" />
+            <marker date="1586448950155" expanded="true" signature="168:2358" ph="{...}" />
+            <marker date="1586448950155" expanded="true" signature="707:764" ph="{...}" />
+            <marker date="1586448950155" expanded="true" signature="830:859" ph="{...}" />
+            <marker date="1586448950155" expanded="true" signature="931:997" ph="{...}" />
+            <marker date="1586448950155" expanded="true" signature="1042:1486" ph="{...}" />
+            <marker date="1586448950155" expanded="true" signature="1111:1476" ph="{...}" />
+            <marker date="1586448950155" expanded="true" signature="1561:1931" ph="{...}" />
+            <marker date="1586448950155" expanded="true" signature="1977:2347" ph="{...}" />
+            <marker date="1586448950155" expanded="true" signature="2068:2311" ph="{...}" />
+            <marker date="1586448950155" expanded="true" signature="2139:2297" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/playfield/ClickOnPlayfield.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+          <folding>
+            <marker date="1586449073513" expanded="true" signature="6:121" ph="..." />
+            <marker date="1586449073513" expanded="true" signature="169:761" ph="{...}" />
+            <marker date="1586449073513" expanded="true" signature="289:310" ph="{...}" />
+            <marker date="1586449073513" expanded="true" signature="368:389" ph="{...}" />
+            <marker date="1586449073513" expanded="true" signature="417:759" ph="{...}" />
           </folding>
         </state>
       </provider>

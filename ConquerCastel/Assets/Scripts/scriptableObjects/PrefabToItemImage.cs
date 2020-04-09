@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using enums;
 using UnityEngine;
 
 namespace scriptableObjects
@@ -14,6 +15,8 @@ namespace scriptableObjects
         {
             public GameObject connectedPrefab;
             public Sprite imageInInventory;
+            public InventoryItemsEnum typeEnum;
+
         }
     }
 }
