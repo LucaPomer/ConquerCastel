@@ -1,4 +1,5 @@
 ﻿using enums;
+using TMPro;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
@@ -22,10 +23,12 @@ namespace UI
 
         private InventoryParent inventoryParentOfSlot;
 
+        private TMP_Text amountText;
 
         // Start is called before the first frame update
         void Start()
         {
+            amountText = GetComponentInChildren<TMP_Text>();
             buttonOfItemSlot = GetComponent<Button>();
 
             inventoryParentOfSlot.SelectedItem
@@ -40,6 +43,7 @@ namespace UI
         // Update is called once per frame
         void Update()
         {
+            amountText.text = amountAvailible.ToString();
         }
 
 

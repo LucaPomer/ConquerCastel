@@ -10,17 +10,18 @@ namespace UI
     public class InventoryParent : MonoBehaviour
     {
         private int inventoryItemsAmount = 5;
-        public List<InventorySlot> inventoryItems= new List<InventorySlot>();
+        public List<InventorySlot> inventoryItems = new List<InventorySlot>();
 
         public PrefabToItemData scriptablePrefabToItemData;
-    
+
         public GameObject inventoryButtonPrefab;
-        
-        private readonly ReactiveProperty<InventoryItemsEnum> selectedItem = new ReactiveProperty<InventoryItemsEnum>(InventoryItemsEnum.None);
+
+        private readonly ReactiveProperty<InventoryItemsEnum> selectedItem =
+            new ReactiveProperty<InventoryItemsEnum>(InventoryItemsEnum.None);
 
         public ReactiveProperty<InventoryItemsEnum> SelectedItem => selectedItem;
-        
-        
+
+
         private InventoryDataHandler dataHandler = new InventoryDataHandler();
 
         private InventoryData playerInventoryData;
@@ -30,14 +31,11 @@ namespace UI
         {
             playerInventoryData = dataHandler.LoadInventoryData();
             CreateInventoryItems();
-            
-
         }
 
         // Update is called once per frame
         void Update()
         {
-        
         }
 
         public void ChangeSelectedItem(InventoryItemsEnum newSelected)
@@ -49,11 +47,10 @@ namespace UI
         {
             foreach (var item in playerInventoryData.inventoryItemsData)
             {
-                GameObject inventoryItemButton = Instantiate(inventoryButtonPrefab,gameObject.transform);
+                GameObject inventoryItemButton = Instantiate(inventoryButtonPrefab, gameObject.transform);
                 InventorySlot currentSlot = inventoryItemButton.GetComponent<InventorySlot>();
                 SetInventorySlotData(currentSlot, item);
                 inventoryItems.Add(inventoryItemButton.GetComponent<InventorySlot>());
-            
             }
         }
 
@@ -72,15 +69,15 @@ namespace UI
         {
             foreach (var item in inventoryItems)
             {
-                if (item.GetItemTypeEnum() == selectedItem.Value)
+                if (item.GetItemTypeEnum() == selectedItem.Value && item.amountAvailible > 0)
                 {
-                    
+                    item.amountAvailible--;
                     return item.prefabToBeSpawned;
+                    
                 }
             }
 
             return null;
         }
-    
     }
 }
