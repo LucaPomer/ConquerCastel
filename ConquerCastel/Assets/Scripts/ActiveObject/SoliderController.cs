@@ -7,6 +7,8 @@ using UnityEngine;
 public class SoliderController : ActiveObjectController
 {
     public SoliderModell soliderM;
+
+    public SoliderView soliderV;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +59,8 @@ public class SoliderController : ActiveObjectController
             if (soliderM.GetTarget() != null)
             {
                 //Todo add animation to attack
+                soliderV.SetMovingAnimation(false);
+                soliderV.SetAttackingAnimation(true);
             }
 
             else
@@ -71,6 +75,8 @@ public class SoliderController : ActiveObjectController
      Action AfterTargetDied()
      {
          soliderM.SetMovingStatus(true);
+         soliderV.SetMovingAnimation(true);
+         soliderV.SetAttackingAnimation(false);
          return null;
      }
 
