@@ -4,46 +4,35 @@ using UnityEngine;
 
 public class SoliderView : ActiveObjectView
 {
-    private Animator anim;
+    [SerializeField] private Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponentInChildren<Animator>();
-        anim.SetBool("moving",true);
+        anim.SetBool("moving", true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        FaceMovementDirection();
     }
 
     public void SetMovingAnimation(bool moving)
     {
-        if (moving)
-        {
-            anim.SetBool("moving",true);
-        }
-        else
-        {
-            anim.SetBool("moving",false);
-        }
-        
+        anim.SetBool("moving", moving);
     }
 
     public void SetAttackingAnimation(bool attacking)
     {
-        if (attacking)
-        {
-            anim.SetBool("attacking",true);
-        }
-        else
-        {
-            anim.SetBool("attacking",false);
-        }
+        anim.SetBool("attacking", attacking);
     }
-    
-    
-    
-   
+
+    private void FaceMovementDirection()
+    {
+        //todo make work
+
+        transform.position = gameObject.transform.position;
+        transform.LookAt(transform.position + gameObject.GetComponent<Rigidbody>().velocity);
+    }
 }

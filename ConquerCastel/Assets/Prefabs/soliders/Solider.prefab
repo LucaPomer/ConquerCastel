@@ -703,7 +703,7 @@ Animator:
   m_GameObject: {fileID: 649056289221115382}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: e003b35aa1b39b1488f5bd8e5772c94d, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 512a4ca60bae6a940bf8db03227a1ee0, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -965,6 +965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soliderM: {fileID: 3280500684020354284}
+  soliderV: {fileID: 790538167}
 --- !u!54 &790538166
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -994,6 +995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeC: {fileID: 995297017849176201}
+  anim: {fileID: 649056289230458458}
 --- !u!1 &4433101726349558153
 GameObject:
   m_ObjectHideFlags: 0

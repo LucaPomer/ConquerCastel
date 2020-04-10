@@ -51,22 +51,20 @@ public class SoliderController : ActiveObjectController
       
         if ( toAttack.CompareTag("enemy"))
         {
+            Debug.Log("attacking");
+            
+            soliderM.SetMovingStatus(false);
+            soliderV.SetMovingAnimation(false);
+            soliderV.SetAttackingAnimation(true);
             
             base.Attack(toAttack,(() => AfterTargetDied()));
             
-            soliderM.SetMovingStatus(false);
             
-            if (soliderM.GetTarget() != null)
-            {
-                //Todo add animation to attack
-                soliderV.SetMovingAnimation(false);
-                soliderV.SetAttackingAnimation(true);
-            }
-
-            else
+            if (soliderM.GetTarget() == null)
             {
                 soliderM.SetTarget(toAttack);
             }
+
             
         }
         
