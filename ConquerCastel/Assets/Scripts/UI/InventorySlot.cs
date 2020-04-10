@@ -58,6 +58,11 @@ namespace UI
             itemType = toSet;
         }
 
+        public InventoryItemsEnum GetItemTypeEnum()
+        {
+            return itemType;
+        }
+
         public void SetInventoryParent(InventoryParent parent)
         {
             inventoryParentOfSlot = parent;

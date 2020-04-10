@@ -12,24 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6c8a9dd41e48403f9ab9bdfced95a68, type: 3}
   m_Name: PrefabToItemImageObject
   m_EditorClassIdentifier: 
-  inventoryItemsData:
+  inventoryItems:
   - connectedPrefab: {fileID: 4433101726349558153, guid: 03d84d677baea420195ef36470697f88,
       type: 3}
     imageInInventory: {fileID: 21300000, guid: 827c710cee01f4d8e94b18608331d509, type: 3}
     typeEnum: 1
   - connectedPrefab: {fileID: 4433101726349558153, guid: 03d84d677baea420195ef36470697f88,
       type: 3}
-    imageInInventory: {fileID: 21300000, guid: efbf940d9c3c0484e83f138515ddbe37, type: 3}
+    imageInInventory: {fileID: 21300000, guid: 265a85171d5f44724ba8b158ee3f637c, type: 3}
     typeEnum: 2
   - connectedPrefab: {fileID: 4433101726349558153, guid: 03d84d677baea420195ef36470697f88,
       type: 3}
-    imageInInventory: {fileID: 21300000, guid: 6792bc100428f4015b09d8e9e8f0bc81, type: 3}
+    imageInInventory: {fileID: 21300000, guid: 51d352a8ffd6d41a485582fc491c6336, type: 3}
     typeEnum: 3
   - connectedPrefab: {fileID: 4433101726349558153, guid: 03d84d677baea420195ef36470697f88,
       type: 3}
-    imageInInventory: {fileID: 21300000, guid: 265a85171d5f44724ba8b158ee3f637c, type: 3}
+    imageInInventory: {fileID: 21300000, guid: efbf940d9c3c0484e83f138515ddbe37, type: 3}
     typeEnum: 4
   - connectedPrefab: {fileID: 4433101726349558153, guid: 03d84d677baea420195ef36470697f88,
       type: 3}
-    imageInInventory: {fileID: 21300000, guid: 51d352a8ffd6d41a485582fc491c6336, type: 3}
+    imageInInventory: {fileID: 21300000, guid: 6792bc100428f4015b09d8e9e8f0bc81, type: 3}
     typeEnum: 5

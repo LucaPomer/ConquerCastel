@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Data;
 using enums;
 using scriptableObjects;
 using UniRx;
@@ -11,18 +12,25 @@ namespace UI
         private int inventoryItemsAmount = 5;
         public List<InventorySlot> inventoryItems= new List<InventorySlot>();
 
-        public PrefabToItemImage scriptablePrefabToItemImage;
+        public PrefabToItemData scriptablePrefabToItemData;
     
         public GameObject inventoryButtonPrefab;
         
         private readonly ReactiveProperty<InventoryItemsEnum> selectedItem = new ReactiveProperty<InventoryItemsEnum>(InventoryItemsEnum.None);
 
         public ReactiveProperty<InventoryItemsEnum> SelectedItem => selectedItem;
+        
+        
+        private InventoryDataHandler dataHandler = new InventoryDataHandler();
+
+        private InventoryData playerInventoryData;
 
         // Start is called before the first frame update
         void Start()
         {
+            playerInventoryData = dataHandler.LoadInventoryData();
             CreateInventoryItems();
+            
 
         }
 
@@ -39,32 +47,35 @@ namespace UI
 
         private void CreateInventoryItems()
         {
-            for (int i = 0; i < inventoryItemsAmount; i++)
+            foreach (var item in playerInventoryData.inventoryItemsData)
             {
-                GameObject inventoryItem = Instantiate(inventoryButtonPrefab,gameObject.transform);
-                InventorySlot currentSlot = inventoryItem.GetComponent<InventorySlot>();
-                SetInventorySlotData(currentSlot, i);
-                inventoryItems.Add(inventoryItem.GetComponent<InventorySlot>());
+                GameObject inventoryItemButton = Instantiate(inventoryButtonPrefab,gameObject.transform);
+                InventorySlot currentSlot = inventoryItemButton.GetComponent<InventorySlot>();
+                SetInventorySlotData(currentSlot, item);
+                inventoryItems.Add(inventoryItemButton.GetComponent<InventorySlot>());
             
             }
         }
 
-        private void SetInventorySlotData(InventorySlot toSet, int index)
+        private void SetInventorySlotData(InventorySlot toSet, InventoryData.InventoryItemDataT data)
         {
-            toSet.SetItemImage(scriptablePrefabToItemImage.inventoryItemsData[index].imageInInventory);
-            toSet.SetPrefabToSpawn(scriptablePrefabToItemImage.inventoryItemsData[index].connectedPrefab);
-            toSet.SetItemType(scriptablePrefabToItemImage.inventoryItemsData[index].typeEnum);
+            PrefabToItemData.InventoryItemT itemInfo =
+                scriptablePrefabToItemData.inventoryItems.Find(x => x.typeEnum == data.typeEnum);
+            toSet.SetItemImage(itemInfo.imageInInventory);
+            toSet.SetPrefabToSpawn(itemInfo.connectedPrefab);
+            toSet.SetItemType(data.typeEnum);
+            toSet.amountAvailible = data.amountAvailable;
             toSet.SetInventoryParent(this);
         }
 
         public GameObject GetPrefabToSpawn()
         {
-            foreach (var item in scriptablePrefabToItemImage.inventoryItemsData)
+            foreach (var item in inventoryItems)
             {
-                if (item.typeEnum == selectedItem.Value)
+                if (item.GetItemTypeEnum() == selectedItem.Value)
                 {
-                    Debug.Log("prefab returned" +item.connectedPrefab );
-                    return item.connectedPrefab;
+                    
+                    return item.prefabToBeSpawned;
                 }
             }
 

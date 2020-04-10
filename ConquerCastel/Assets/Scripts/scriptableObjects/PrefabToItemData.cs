@@ -6,9 +6,9 @@ using UnityEngine;
 namespace scriptableObjects
 {
     [CreateAssetMenu(menuName = "PrefabToItemImage")]
-    public class PrefabToItemImage : ScriptableObject
+    public class PrefabToItemData : ScriptableObject
     {
-        public List<InventoryItemT> inventoryItemsData = new List<InventoryItemT>();
+        public List<InventoryItemT> inventoryItems = new List<InventoryItemT>();
 
         [Serializable]
         public class InventoryItemT
