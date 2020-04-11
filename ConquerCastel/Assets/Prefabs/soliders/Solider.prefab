@@ -949,7 +949,6 @@ MonoBehaviour:
   attackEveryXSecond: 2
   attackRangeRadius: 3
   lvl: 0
-  target: {fileID: 0}
   movementSpeed: 0.5
   moving: 1
 --- !u!114 &995297017849176201
@@ -996,6 +995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeC: {fileID: 995297017849176201}
   anim: {fileID: 649056289230458458}
+  soliderM: {fileID: 3280500684020354284}
 --- !u!1 &4433101726349558153
 GameObject:
   m_ObjectHideFlags: 0

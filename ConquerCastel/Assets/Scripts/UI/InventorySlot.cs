@@ -13,7 +13,7 @@ namespace UI
 
         public Image itemImage;
 
-        public int amountAvailible;
+        public ReactiveProperty<int> amountAvailible = new ReactiveProperty<int>();
 
         private Button buttonOfItemSlot;
 
@@ -38,12 +38,13 @@ namespace UI
                 selected = false;
                 ChangeItemColor();
             });
+
+            amountAvailible.Subscribe(newValue => { amountText.text = newValue.ToString(); });
         }
 
         // Update is called once per frame
         void Update()
         {
-            amountText.text = amountAvailible.ToString();
         }
 
 

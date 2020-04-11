@@ -1,38 +1,50 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UniRx;
 using UnityEngine;
 
-public class SoliderView : ActiveObjectView
+namespace ActiveObject
 {
-    [SerializeField] private Animator anim;
-
-    // Start is called before the first frame update
-    void Start()
+    public class SoliderView : ActiveObjectView
     {
-        anim.SetBool("moving", true);
-    }
+        [SerializeField] private Animator anim;
+        [SerializeField] private SoliderModell soliderM;
 
-    // Update is called once per frame
-    void Update()
-    {
-        FaceMovementDirection();
-    }
+        private GameObject targetToFollow;
+        // Start is called before the first frame update
+        void Start()
+        {
+            soliderM.target.Subscribe(newTargetValue => 
+                { targetToFollow = newTargetValue ? newTargetValue : null; });
+        }
 
-    public void SetMovingAnimation(bool moving)
-    {
-        anim.SetBool("moving", moving);
-    }
+        // Update is called once per frame
+        void Update()
+        {
+            FaceMovementDirection();
+        }
 
-    public void SetAttackingAnimation(bool attacking)
-    {
-        anim.SetBool("attacking", attacking);
-    }
+        public void SetMovingAnimation(bool moving)
+        {
+            anim.SetBool("moving", moving);
+        }
 
-    private void FaceMovementDirection()
-    {
-        //todo make work
+        public void SetAttackingAnimation(bool attacking)
+        {
+            anim.SetBool("attacking", attacking);
+        }
 
-        transform.position = gameObject.transform.position;
-        transform.LookAt(transform.position + gameObject.GetComponent<Rigidbody>().velocity);
+        private void FaceMovementDirection()
+        {
+            if (targetToFollow)
+            {
+                Vector3 direction = (targetToFollow.transform.position - transform.position).normalized;
+                Quaternion look = Quaternion.LookRotation(direction);
+                transform.rotation = look;
+            }
+            else
+            {
+                transform.rotation = Quaternion.identity;
+            }
+
+        }
     }
 }

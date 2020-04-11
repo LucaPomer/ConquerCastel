@@ -1259,6 +1259,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Solider
       objectReference: {fileID: 0}
+    - target: {fileID: 4433101726349558153, guid: 03d84d677baea420195ef36470697f88,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6919517600410904109, guid: 03d84d677baea420195ef36470697f88,
         type: 3}
       propertyPath: m_LocalPosition.x

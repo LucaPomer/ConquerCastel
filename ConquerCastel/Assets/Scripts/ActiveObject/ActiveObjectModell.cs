@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UniRx;
 using UnityEngine;
 
 public class ActiveObjectModell : MonoBehaviour
@@ -16,7 +17,7 @@ public class ActiveObjectModell : MonoBehaviour
 
     public int lvl;
 
-    public GameObject target;
+    public ReactiveProperty<GameObject> target = new ReactiveProperty<GameObject>();
 
     // Start is called before the first frame update
     void Start()
@@ -32,9 +33,9 @@ public class ActiveObjectModell : MonoBehaviour
 
     public void SetTarget(GameObject targetToSet)
     {
-        if (target==null && targetToSet.CompareTag("enemy"))
+        if (target.Value==null && targetToSet.CompareTag("enemy"))
         {
-            this.target = targetToSet;
+            this.target.Value = targetToSet;
          //   Debug.Log("set Target");
         }
         
@@ -42,12 +43,12 @@ public class ActiveObjectModell : MonoBehaviour
 
     public void ResetTargetToNull()
     {
-        target = null;
+        target.Value = null;
     }
 
     public GameObject GetTarget()
     {
-        return target;
+        return target.Value;
     }
     
     public void ReductHealth(float hitPoints)

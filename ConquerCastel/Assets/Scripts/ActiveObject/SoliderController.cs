@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.WindowsRuntime;
+using ActiveObject;
 using UnityEngine;
 
 public class SoliderController : ActiveObjectController
@@ -18,7 +19,7 @@ public class SoliderController : ActiveObjectController
     // Update is called once per frame
     void Update()
     {
-        if (!soliderM.target)
+        if (!soliderM.GetTarget())
         {
             base.SearchForTarget();
         }

@@ -9,7 +9,6 @@ namespace UI
 {
     public class InventoryParent : MonoBehaviour
     {
-        private int inventoryItemsAmount = 5;
         public List<InventorySlot> inventoryItems = new List<InventorySlot>();
 
         public PrefabToItemData scriptablePrefabToItemData;
@@ -61,7 +60,7 @@ namespace UI
             toSet.SetItemImage(itemInfo.imageInInventory);
             toSet.SetPrefabToSpawn(itemInfo.connectedPrefab);
             toSet.SetItemType(data.typeEnum);
-            toSet.amountAvailible = data.amountAvailable;
+            toSet.amountAvailible.Value = data.amountAvailable;
             toSet.SetInventoryParent(this);
         }
 
@@ -69,9 +68,9 @@ namespace UI
         {
             foreach (var item in inventoryItems)
             {
-                if (item.GetItemTypeEnum() == selectedItem.Value && item.amountAvailible > 0)
+                if (item.GetItemTypeEnum() == selectedItem.Value && item.amountAvailible.Value > 0)
                 {
-                    item.amountAvailible--;
+                    item.amountAvailible.Value--;
                     return item.prefabToBeSpawned;
                     
                 }

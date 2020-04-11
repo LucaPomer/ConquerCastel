@@ -46,7 +46,6 @@ public class ActiveObjectController : MonoBehaviour
     IEnumerable<WaitForSeconds> GiveDamage(GameObject toAttack, Action onFinished)
     {
         bool hasTarget = true;
-        bool targetDead = false;
         ActiveObjectController activeControllerTarget = toAttack.GetComponent<ActiveObjectController>();
         PassiveObjectController passiveControllerTarget = toAttack.GetComponent<PassiveObjectController>();
         while (hasTarget)

@@ -33,7 +33,6 @@ public class ClickOnPlayfield : MonoBehaviour
         if (Physics.Raycast(ray, out hit)&& toSpawn)
         {
             Vector3 clickedPosition = new Vector3(hit.point.x,1,hit.point.z);
-            Debug.Log("clicked on playfield" + clickedPosition);
             
             Instantiate( toSpawn
                 , clickedPosition
