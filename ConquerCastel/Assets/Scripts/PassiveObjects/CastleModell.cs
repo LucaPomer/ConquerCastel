@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace PassiveObjects
 {
     public class CastleModell : PassiveObjectModell
     {
+
+        [SerializeField] private GameObject wonImage;
         // Start is called before the first frame update
         void Start()
         {
@@ -22,6 +26,7 @@ namespace PassiveObjects
             if (health<=0)
             {
                 Debug.Log("You Won");
+                wonImage.SetActive(true);
             }
         }
     }

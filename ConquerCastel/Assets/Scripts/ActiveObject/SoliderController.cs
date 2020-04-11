@@ -52,7 +52,6 @@ public class SoliderController : ActiveObjectController
       
         if ( toAttack.CompareTag("enemy"))
         {
-            Debug.Log("attacking");
             
             soliderM.SetMovingStatus(false);
             soliderV.SetMovingAnimation(false);

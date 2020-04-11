@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0001f5c5-0ebb-4ae0-86ec-84c11b4c1f3c" name="Default Changelist" comment="N">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ConquerCastel/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConquerCastel/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ConquerCastel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConquerCastel/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PassiveObjects/PassiveObjectModell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PassiveObjects/PassiveObjectModell.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PassiveObjects/CastleModell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PassiveObjects/CastleModell.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +52,7 @@
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/SoliderController.cs">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="594">
-                  <caret line="60" column="20" lean-forward="true" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+                  <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
                   <folding>
                     <marker date="1586597790775" expanded="false" signature="6:165" ph="..." />
                     <marker date="1586597790775" expanded="true" signature="222:2004" ph="{...}" />
@@ -96,15 +94,15 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/PassiveObjects/PassiveObjectController.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="368">
-                  <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+                <state relative-caret-position="336">
+                  <caret line="23" selection-start-line="23" selection-end-line="23" />
                   <folding>
-                    <marker date="1586340971464" expanded="false" signature="6:78" ph="..." />
-                    <marker date="1586340971464" expanded="true" signature="132:819" ph="{...}" />
-                    <marker date="1586340971464" expanded="true" signature="307:449" ph="{...}" />
-                    <marker date="1586340971464" expanded="true" signature="507:528" ph="{...}" />
-                    <marker date="1586340971464" expanded="true" signature="566:732" ph="{...}" />
-                    <marker date="1586340971464" expanded="true" signature="759:817" ph="{...}" />
+                    <marker date="1586613703302" expanded="false" signature="6:78" ph="..." />
+                    <marker date="1586613703302" expanded="true" signature="132:723" ph="{...}" />
+                    <marker date="1586613703302" expanded="true" signature="341:353" ph="{...}" />
+                    <marker date="1586613703302" expanded="true" signature="411:432" ph="{...}" />
+                    <marker date="1586613703302" expanded="true" signature="470:636" ph="{...}" />
+                    <marker date="1586613703302" expanded="true" signature="663:721" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -159,7 +157,7 @@
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/SoliderView.cs">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="736">
-                  <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+                  <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
                   <folding>
                     <marker date="1586612102749" expanded="false" signature="6:31" ph="..." />
                     <marker date="1586612102749" expanded="true" signature="55:1311" ph="{...}" />
@@ -181,7 +179,7 @@
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/PassiveObjects/CastleView.cs">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="80">
-                  <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+                  <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
                   <folding>
                     <marker date="1586613051092" expanded="true" signature="24:290" ph="{...}" />
                     <marker date="1586613051092" expanded="true" signature="74:288" ph="{...}" />
@@ -195,15 +193,16 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/PassiveObjects/CastleModell.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="448">
-                  <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+                <state relative-caret-position="432">
+                  <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
                   <folding>
-                    <marker date="1586613336954" expanded="true" signature="44:529" ph="{...}" />
-                    <marker date="1586613336954" expanded="true" signature="98:527" ph="{...}" />
-                    <marker date="1586613336954" expanded="true" signature="182:211" ph="{...}" />
-                    <marker date="1586613336954" expanded="true" signature="277:306" ph="{...}" />
-                    <marker date="1586613336954" expanded="true" signature="366:521" ph="{...}" />
-                    <marker date="1586613336954" expanded="true" signature="445:511" ph="{...}" />
+                    <marker date="1586616345802" expanded="true" signature="6:40" ph="..." />
+                    <marker date="1586616345802" expanded="true" signature="66:648" ph="{...}" />
+                    <marker date="1586616345802" expanded="true" signature="120:646" ph="{...}" />
+                    <marker date="1586616345802" expanded="true" signature="259:288" ph="{...}" />
+                    <marker date="1586616345802" expanded="true" signature="354:383" ph="{...}" />
+                    <marker date="1586616345802" expanded="true" signature="443:640" ph="{...}" />
+                    <marker date="1586616345802" expanded="true" signature="522:630" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -213,7 +212,7 @@
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/PassiveObjects/CastleController.cs">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="32">
-                  <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+                  <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
                   <folding>
                     <marker date="1586613109534" expanded="true" signature="24:302" ph="{...}" />
                     <marker date="1586613109534" expanded="true" signature="86:300" ph="{...}" />
@@ -330,7 +329,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/ActiveObject/ActiveObjectView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ActiveObject/SoliderModell.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PassiveObjects/PassiveObjectView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PassiveObjects/PassiveObjectController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ActiveObject/TriggerRadius.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ActiveObject/AttackRadius.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/InventoryButton.cs" />
@@ -351,6 +349,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PassiveObjects/CastleView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PassiveObjects/CastleController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PassiveObjects/PassiveObjectModell.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PassiveObjects/PassiveObjectController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PassiveObjects/CastleModell.cs" />
       </list>
     </option>
@@ -474,12 +473,12 @@
       <workItem from="1583766174880" duration="6697000" />
       <workItem from="1584379917402" duration="15252000" />
       <workItem from="1586340212376" duration="37615000" />
-      <workItem from="1586612016000" duration="1417000" />
+      <workItem from="1586612016000" duration="2789000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83606000" />
+    <option name="totallyTimeSpent" value="84978000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -863,7 +862,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/SoliderView.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
-          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
           <folding>
             <marker date="1586612102749" expanded="false" signature="6:31" ph="..." />
             <marker date="1586612102749" expanded="true" signature="55:1311" ph="{...}" />
@@ -883,7 +882,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PassiveObjects/CastleView.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
           <folding>
             <marker date="1586613051092" expanded="true" signature="24:290" ph="{...}" />
             <marker date="1586613051092" expanded="true" signature="74:288" ph="{...}" />
@@ -896,7 +895,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PassiveObjects/CastleController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
-          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding>
             <marker date="1586613109534" expanded="true" signature="24:302" ph="{...}" />
             <marker date="1586613109534" expanded="true" signature="86:300" ph="{...}" />
@@ -909,7 +908,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ActiveObject/SoliderController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
-          <caret line="60" column="20" lean-forward="true" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
           <folding>
             <marker date="1586597790775" expanded="false" signature="6:165" ph="..." />
             <marker date="1586597790775" expanded="true" signature="222:2004" ph="{...}" />
@@ -959,21 +958,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PassiveObjects/CastleModell.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <marker date="1586613336954" expanded="true" signature="44:529" ph="{...}" />
-            <marker date="1586613336954" expanded="true" signature="98:527" ph="{...}" />
-            <marker date="1586613336954" expanded="true" signature="182:211" ph="{...}" />
-            <marker date="1586613336954" expanded="true" signature="277:306" ph="{...}" />
-            <marker date="1586613336954" expanded="true" signature="366:521" ph="{...}" />
-            <marker date="1586613336954" expanded="true" signature="445:511" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PassiveObjects/PassiveObjectModell.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
@@ -993,15 +977,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PassiveObjects/PassiveObjectController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        <state relative-caret-position="336">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
-            <marker date="1586340971464" expanded="false" signature="6:78" ph="..." />
-            <marker date="1586340971464" expanded="true" signature="132:819" ph="{...}" />
-            <marker date="1586340971464" expanded="true" signature="307:449" ph="{...}" />
-            <marker date="1586340971464" expanded="true" signature="507:528" ph="{...}" />
-            <marker date="1586340971464" expanded="true" signature="566:732" ph="{...}" />
-            <marker date="1586340971464" expanded="true" signature="759:817" ph="{...}" />
+            <marker date="1586613703302" expanded="false" signature="6:78" ph="..." />
+            <marker date="1586613703302" expanded="true" signature="132:723" ph="{...}" />
+            <marker date="1586613703302" expanded="true" signature="341:353" ph="{...}" />
+            <marker date="1586613703302" expanded="true" signature="411:432" ph="{...}" />
+            <marker date="1586613703302" expanded="true" signature="470:636" ph="{...}" />
+            <marker date="1586613703302" expanded="true" signature="663:721" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PassiveObjects/CastleModell.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <folding>
+            <marker date="1586616345802" expanded="true" signature="6:40" ph="..." />
+            <marker date="1586616345802" expanded="true" signature="66:648" ph="{...}" />
+            <marker date="1586616345802" expanded="true" signature="120:646" ph="{...}" />
+            <marker date="1586616345802" expanded="true" signature="259:288" ph="{...}" />
+            <marker date="1586616345802" expanded="true" signature="354:383" ph="{...}" />
+            <marker date="1586616345802" expanded="true" signature="443:640" ph="{...}" />
+            <marker date="1586616345802" expanded="true" signature="522:630" ph="{...}" />
           </folding>
         </state>
       </provider>
