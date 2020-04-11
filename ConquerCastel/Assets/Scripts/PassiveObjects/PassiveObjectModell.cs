@@ -28,7 +28,7 @@ public class PassiveObjectModell : MonoBehaviour
     }
 
     //true for dead
-    public void ReductHealth(float hitPoints)
+    public virtual void ReductHealth(float hitPoints)
     {
         health -= hitPoints;
         if (health <= 0)

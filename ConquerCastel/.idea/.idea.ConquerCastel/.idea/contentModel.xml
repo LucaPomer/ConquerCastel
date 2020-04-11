@@ -310,6 +310,9 @@
             <e p="InventoryItemsEnum.cs" t="Include" />
           </e>
           <e p="PassiveObjects" t="Include">
+            <e p="CastleController.cs" t="Include" />
+            <e p="CastleModell.cs" t="Include" />
+            <e p="CastleView.cs" t="Include" />
             <e p="PassiveObjectController.cs" t="Include" />
             <e p="PassiveObjectModell.cs" t="Include" />
             <e p="PassiveObjectView.cs" t="Include" />

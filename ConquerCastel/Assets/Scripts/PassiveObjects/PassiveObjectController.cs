@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class PassiveObjectController : MonoBehaviour
 {
-    private PassiveObjectModell passiveObjectModell;
+    [SerializeField] private PassiveObjectModell passiveObjectModell;
 
-    private PassiveObjectView passiveObjectView;
+    [SerializeField] private PassiveObjectView passiveObjectView;
     // Start is called before the first frame update
     void Start()
     {
-        passiveObjectModell = GetComponent<PassiveObjectModell>();
-        passiveObjectView = GetComponent<PassiveObjectView>();
     }
 
     // Update is called once per frame
