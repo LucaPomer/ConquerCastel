@@ -42,7 +42,7 @@ namespace ActiveObject
             }
             else
             {
-                transform.rotation = Quaternion.identity;
+            transform.LookAt(new Vector3(0,1,0));
             }
 
         }
