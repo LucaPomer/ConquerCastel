@@ -568,6 +568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 649056289221403028}
   - component: {fileID: 649056289226322074}
+  - component: {fileID: 2095392776}
   m_Layer: 0
   m_Name: Haruko_body
   m_TagString: Untagged
@@ -660,6 +661,22 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 0.29403365, z: -0.10505214}
     m_Extent: {x: 0.36747378, y: 0.62340134, z: 0.33538878}
   m_DirtyAABB: 0
+--- !u!111 &2095392776
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649056289221115380}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 53b8d029f9b3c4482a28091bd9d76d2f, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 53b8d029f9b3c4482a28091bd9d76d2f, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &649056289221115382
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,7 +962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toAttackTagName: 0
-  health: 10
+  health: 30
   attackDamage: 5
   attackEveryXSecond: 2
   attackRangeRadius: 3
@@ -997,6 +1014,7 @@ MonoBehaviour:
   activeC: {fileID: 995297017849176201}
   anim: {fileID: 649056289230458458}
   soliderM: {fileID: 3280500684020354284}
+  onHitAnimation: {fileID: 2095392776}
 --- !u!1 &4433101726349558153
 GameObject:
   m_ObjectHideFlags: 0
