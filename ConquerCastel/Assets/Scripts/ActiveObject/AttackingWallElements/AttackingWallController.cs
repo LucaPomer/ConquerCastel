@@ -1,8 +1,6 @@
-﻿using UniRx.Triggers;
-
-namespace PassiveObjects
+﻿namespace ActiveObject.AttackingWallElements
 {
-    public class CastleController : PassiveObjectController
+    public class AttackingWallController : ActiveObjectController
     {
         // Start is called before the first frame update
         void Start()
@@ -10,6 +8,6 @@ namespace PassiveObjects
         
         }
 
-
+      
     }
 }

@@ -17,13 +17,9 @@ public class SoliderController : ActiveObjectController
     }
 
     // Update is called once per frame
-    void Update()
+    new void Update()
     {
-        if (!soliderM.GetTarget())
-        {
-            base.SearchForTarget();
-        }
-        
+        base.Update();
         if (soliderM.GetMovingStatus()==true)
         {
             Move();
@@ -50,7 +46,7 @@ public class SoliderController : ActiveObjectController
     {
        
       
-        if ( toAttack.CompareTag("enemy"))
+        if ( toAttack.CompareTag(soliderM.GetToAttackNameTag()))
         {
             
             soliderM.SetMovingStatus(false);

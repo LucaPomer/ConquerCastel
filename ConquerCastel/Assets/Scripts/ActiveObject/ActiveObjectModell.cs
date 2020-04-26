@@ -2,11 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using enums;
 using UniRx;
 using UnityEngine;
 
 public class ActiveObjectModell : MonoBehaviour
 {
+    [SerializeField] protected TagsEnum toAttackTagName;
     public float health;
 
     public float attackDamage;
@@ -33,10 +35,10 @@ public class ActiveObjectModell : MonoBehaviour
 
     public void SetTarget(GameObject targetToSet)
     {
-        if (target.Value==null && targetToSet.CompareTag("enemy"))
+        if (target.Value==null && targetToSet.CompareTag(toAttackTagName.ToString()))
         {
             this.target.Value = targetToSet;
-         //   Debug.Log("set Target");
+           Debug.Log("set Target" + targetToSet);
         }
         
     }
@@ -63,6 +65,11 @@ public class ActiveObjectModell : MonoBehaviour
     public bool IsAlive()
     {
         return health > 0;
+    }
+
+    public string GetToAttackNameTag()
+    {
+        return toAttackTagName.ToString();
     }
 
 

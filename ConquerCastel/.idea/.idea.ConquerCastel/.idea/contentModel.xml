@@ -295,6 +295,11 @@
             <e p="ActiveObjectController.cs" t="Include" />
             <e p="ActiveObjectModell.cs" t="Include" />
             <e p="ActiveObjectView.cs" t="Include" />
+            <e p="AttackingWallElements" t="Include">
+              <e p="AttackingWallController.cs" t="Include" />
+              <e p="AttackingWallModell.cs" t="Include" />
+              <e p="AttackingWallView.cs" t="Include" />
+            </e>
             <e p="AttackRadius.cs" t="Include" />
             <e p="SoliderController.cs" t="Include" />
             <e p="SoliderModell.cs" t="Include" />
@@ -308,6 +313,7 @@
           </e>
           <e p="enums" t="Include">
             <e p="InventoryItemsEnum.cs" t="Include" />
+            <e p="TagsEnum.cs" t="Include" />
           </e>
           <e p="PassiveObjects" t="Include">
             <e p="CastleController.cs" t="Include" />

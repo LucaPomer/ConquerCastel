@@ -853,7 +853,7 @@ GameObject:
   - component: {fileID: 790538167}
   m_Layer: 0
   m_Name: SoliderBody
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -944,7 +944,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98105b18f3b1b4df7ae51297e5ff2f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  toAttackTagName: 0
+  health: 10
   attackDamage: 5
   attackEveryXSecond: 2
   attackRangeRadius: 3
@@ -1007,7 +1008,7 @@ GameObject:
   - component: {fileID: 6919517600410904109}
   m_Layer: 0
   m_Name: Solider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

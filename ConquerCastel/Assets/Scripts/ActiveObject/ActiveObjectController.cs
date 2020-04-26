@@ -18,9 +18,12 @@ public class ActiveObjectController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    protected void Update()
     {
- 
+        if (!activeObjectModell.GetTarget())
+        {
+            SearchForTarget();
+        }
         
     }
     
@@ -94,7 +97,7 @@ public class ActiveObjectController : MonoBehaviour
         while (i < inAttackRangeColliders.Length)
         {
             GameObject inRange = inAttackRangeColliders[i].gameObject;
-            if (inRange.CompareTag("enemy"))
+            if (inRange.CompareTag(activeObjectModell.GetToAttackNameTag()))
             {
                 activeObjectModell.SetTarget(inRange);
                 Attack(inRange,()=>{});
