@@ -335,6 +335,7 @@
             <e p="PrefabToItemData.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
+            <e p="Billboard.cs" t="Include" />
             <e p="HealthBar.cs" t="Include" />
             <e p="InventoryParent.cs" t="Include" />
             <e p="InventorySlot.cs" t="Include" />
