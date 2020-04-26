@@ -1490,6 +1490,28 @@ PrefabInstance:
       objectReference: {fileID: 333199900}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27d38bd5da2a941528a7545aa739aed1, type: 3}
+--- !u!1 &2095392773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 649056289221115380, guid: 03d84d677baea420195ef36470697f88,
+    type: 3}
+  m_PrefabInstance: {fileID: 6396924020794653817}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &2095392774
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095392773}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 53b8d029f9b3c4482a28091bd9d76d2f, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 53b8d029f9b3c4482a28091bd9d76d2f, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2119425020
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,11 +1638,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Castle
       objectReference: {fileID: 0}
-    - target: {fileID: 7217082861137859023, guid: d6141e0c23abf4647aba3f00fa51ad22,
-        type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
     - target: {fileID: 7217082861137497583, guid: d6141e0c23abf4647aba3f00fa51ad22,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1675,11 +1692,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7217082861137859019, guid: d6141e0c23abf4647aba3f00fa51ad22,
-        type: 3}
-      propertyPath: wonCanvas
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7217082861137859019, guid: d6141e0c23abf4647aba3f00fa51ad22,
         type: 3}
@@ -1760,5 +1772,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6058912454110768935, guid: 03d84d677baea420195ef36470697f88,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 649056289221403028, guid: 03d84d677baea420195ef36470697f88,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3280500684020354284, guid: 03d84d677baea420195ef36470697f88,
+        type: 3}
+      propertyPath: health
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 790538167, guid: 03d84d677baea420195ef36470697f88, type: 3}
+      propertyPath: onHitAnimation
+      value: 
+      objectReference: {fileID: 2095392774}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03d84d677baea420195ef36470697f88, type: 3}

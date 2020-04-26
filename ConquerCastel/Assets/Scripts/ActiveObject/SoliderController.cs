@@ -74,5 +74,12 @@ public class SoliderController : ActiveObjectController
          return null;
      }
 
+     public override void Hit(float hitPoints)
+     {
+         base.Hit(hitPoints);
+         soliderV.PlayHitAnimation();
+         
+     }
+
 
 }

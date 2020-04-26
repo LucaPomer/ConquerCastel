@@ -9,6 +9,9 @@ namespace ActiveObject
         [SerializeField] private SoliderModell soliderM;
 
         private GameObject targetToFollow;
+        
+        public Animation onHitAnimation;
+        
         // Start is called before the first frame update
         void Start()
         {
@@ -30,6 +33,12 @@ namespace ActiveObject
         public void SetAttackingAnimation(bool attacking)
         {
             anim.SetBool("attacking", attacking);
+        }
+
+        public void PlayHitAnimation()
+        {
+            onHitAnimation.Play();
+            Debug.Log("play hit animation" );
         }
 
         private void FaceMovementDirection()

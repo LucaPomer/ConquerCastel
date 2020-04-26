@@ -27,7 +27,7 @@ public class ActiveObjectController : MonoBehaviour
         
     }
     
-    public void Hit(float hitPoints)
+    public virtual void Hit(float hitPoints)
     {
        activeObjectModell.ReductHealth(hitPoints);
     }
