@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using enums;
+using UI;
 using UniRx;
 using UnityEngine;
 
@@ -10,6 +11,8 @@ public class ActiveObjectModell : MonoBehaviour
 {
     [SerializeField] protected TagsEnum toAttackTagName;
     public float health;
+
+    public HealthBar healthBarUi;
 
     public float attackDamage;
 
@@ -24,7 +27,7 @@ public class ActiveObjectModell : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        healthBarUi.SetMaxHealth(health);
     }
 
     // Update is called once per frame
@@ -56,6 +59,10 @@ public class ActiveObjectModell : MonoBehaviour
     public void ReductHealth(float hitPoints)
     {
         health -= hitPoints;
+        
+        //todo make better in mvc
+        healthBarUi.SetHealth(health);
+        
         if (health <= 0)
         {
             gameObject.SetActive(false);
