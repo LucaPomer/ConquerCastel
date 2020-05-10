@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UI;
 using UnityEngine;
 
 public class PassiveObjectModell : MonoBehaviour
 {
 
+    [SerializeField] HealthBar healthBarUi;
     public Vector3 positionOnPlayfield;
     public float health;
 
@@ -31,6 +33,8 @@ public class PassiveObjectModell : MonoBehaviour
     public virtual void ReductHealth(float hitPoints)
     {
         health -= hitPoints;
+        healthBarUi.SetHealth(health);
+        
         if (health <= 0)
         {
             gameObject.SetActive(false);
