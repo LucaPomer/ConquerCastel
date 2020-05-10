@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UI;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ClickOnPlayfield : MonoBehaviour
 
@@ -25,6 +26,12 @@ public class ClickOnPlayfield : MonoBehaviour
     
     void OnMouseDown()
     {
+
+        //check if the mouse is on UI
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
         // Destroy the gameObject after clicking on it
       
         GameObject toSpawn = inventory.GetPrefabToSpawn();
