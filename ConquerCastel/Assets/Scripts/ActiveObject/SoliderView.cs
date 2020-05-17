@@ -38,7 +38,6 @@ namespace ActiveObject
         public void PlayHitAnimation()
         {
             onHitAnimation.Play();
-            Debug.Log("play hit animation" );
         }
 
         private void FaceMovementDirection()
